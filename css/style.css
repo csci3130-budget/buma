@@ -1,0 +1,62 @@
+<?php header("Content-type: text/css"); ?>
+body
+        {
+	 background-color:white;
+    }
+
+
+#wrap 
+	{
+
+       width:700px;
+       
+	   border:1px solid white;
+	  
+       margin: auto;
+
+    }
+
+#header
+    {
+     width:700px;  
+     border:1px solid lightblue;
+	 padding-right:30px;
+	 background-color:DeepSkyBlue;
+    }
+
+#mian-con
+     {
+     width:700px;
+     float:centre;
+     padding:10px 10px 20px 200px;
+     border:1px solid white;
+     }
+
+
+#footer
+    {
+     border:1px solid white;
+     height:60px; 
+     width:720px;  
+     clear:both;
+     
+     background-color:DeepSkyBlue;
+    }
+#display
+	{
+	
+	width:700px;
+	margin:20px 0 30px 0;
+	1615 1000  1100 1607 1616 1606 1115 
+	}
+
+div.alert {
+	border-width:5px;
+    border-style:solid;	
+    border-color:Red;
+}	
+div.normal{
+		border:1px solid white;
+		margin:5px 0 5px 0;
+		 }
+
