@@ -1,9 +1,14 @@
-<form action="login.php" id="login_form">
-    <p class="title">Login</p>
-    <p><label>Username:</label> <input type="text" name="username" id="username" /></p>
-    <p><label>Password:</label> <input type="password" name="password" id="password" /></p>
-    <p><input class="btn_submit" type="submit" name="submit_login" value="Login" />
-    <a href="forgot_password.php" class="forgot">Forgot password?</a></p>
-    <div class="clear"></div>
-    <p class="txt1">If you are not a member, please <a class="sign_up" href="sign_up.php">Sign up</a>.</p>
-</form>
+
+
+      <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Welcome to BUBA</h2>
+        <input type="text" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" required>
+        <label class="checkbox checkbox-control">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button type="button" class="btn btn-link forgot-control">Forgot Password</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+		<button class="btn btn-default btm-new-account" type="button">Create New Account</button>
+      </form>
+

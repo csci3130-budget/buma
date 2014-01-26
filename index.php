@@ -3,34 +3,44 @@
         <meta charset="utf-8">
         <meta name="author" content="Ruipeng">
         <meta name="description" content="The website for Assignment1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, , user-scalable=no">
         <title>BUMA</title>
- 		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" >
-		<link href="css/format.css" rel="stylesheet" type="text/css" media="all" />
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" >
+        <link href="css/format.css" rel="stylesheet" type="text/css" media="all" />
  	    <script type="text/javascript" src="js/scripts.js">
         </script>
     </head>
 
     <body>
-    	<div id="wrap">
-            <div id="header">
-                <h1>BUMA</h1>
-                <ul id="nav">
-                	<li><a href="/" title="Home">Home</a></li>
-                    <li><a href="login" title="Login">Login</a></li>
-                	<li><a href="sign_in" title="Sign in">Sign in</a></li>
-                	<li><a href="sign_up" title="Sign up">Sign up</a></li>
-                	<li><a href="add_new" title="Add New Income/Outcome">Add New Income/Outcome</a></li>
-                	<li><a href="wish_list" title="Wish List">Wish List</a></li>
-                	<li><a href="statistics" title="Statistics">Statistics</a></li>
-                </ul>
-                <div class="clear"></div>
-            </div><?php
+          	
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">BUBA</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#Add">Add New Expense</a></li>
+                        <li><a href="#Wish">Wish List</a></li>
+                        <li><a href="#Stats">Statistics</a></li>
+
+                      </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+            <div class="container"><?php
             
             include "login.php";
             
-            ?><div class="clear"></div>
-            <div id="footer">CSCI3130</div>
-        </div>
+            ?></div>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
