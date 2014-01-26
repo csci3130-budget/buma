@@ -1,62 +1,109 @@
-<?php header("Content-type: text/css"); ?>
-body
-        {
-	 background-color:white;
-    }
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:white;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
 
+.clear {
+	clear: both;
+}
 
-#wrap 
-	{
+#wrap {
+	width: 500px;
+	margin: 0 auto;
+}
 
-       width:700px;
-       
-	   border:1px solid white;
-	  
-       margin: auto;
-
-    }
-
-#header
-    {
-     width:700px;  
+#header {
+     width:100%;
      border:1px solid lightblue;
 	 padding-right:30px;
-	 background-color:DeepSkyBlue;
-    }
+	 background-color: #003699;
+	 color: #fff;
+}
 
-#mian-con
-     {
+#nav {
+}
+
+#nav li {
+	color: #fff;
+	font-weight: bold;
+	float: left
+}
+
+#mian-con {
      width:700px;
      float:centre;
      padding:10px 10px 20px 200px;
      border:1px solid white;
-     }
+}
 
+#login_form {
+	width: 290px;
+	margin: 0 auto;
+}
 
-#footer
-    {
-     border:1px solid white;
-     height:60px; 
-     width:720px;  
-     clear:both;
-     
-     background-color:DeepSkyBlue;
-    }
-#display
-	{
-	
+#login_form .title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+}
+
+#login_form label {
+	width: 90px;
+	float: left;
+}
+
+#login_form .txt1 {
+	font-size: 14px;
+}
+
+#login_form .forgot {
+	font-size: 14px;
+	color: blue;
+	text-decoration: none;
+	float: left;
+	margin-top: 6px;
+	margin-left: 67px;
+}
+
+#login_form .sign_up {
+	font-size: 14px;
+	color: blue;
+	text-decoration: none;
+}
+
+.btn_submit {
+	padding: 5px;
+	background-color: gray;
+	border: 1px solid black;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+}
+
+#footer {
+     height:60px;
+	 line-height: 60px; 
+     width:100%;
+     background-color: #003699;
+	 text-align: center;
+	 color: #fff;
+}
+
+#display {
 	width:700px;
 	margin:20px 0 30px 0;
-	1615 1000  1100 1607 1616 1606 1115 
-	}
+}
 
 div.alert {
 	border-width:5px;
     border-style:solid;	
     border-color:Red;
-}	
-div.normal{
-		border:1px solid white;
-		margin:5px 0 5px 0;
-		 }
-
+}
+	
+div.normal {
+	border:1px solid white;
+	margin:5px 0 5px 0;
+}
