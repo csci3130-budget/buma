@@ -13,33 +13,33 @@
     </head>
 
     <body>
-          	
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand" href="#">BUBA</a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                      <ul class="nav navbar-nav">
-                        <li><a href="#Add">Add New Expense</a></li>
-                        <li><a href="#Wish">Wish List</a></li>
-                        <li><a href="#Stats">Statistics</a></li>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">BUBA</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#Add">Add New Expense</a></li>
+                    <li><a href="#Wish">Wish List</a></li>
+                    <li><a href="#Stats">Statistics</a></li>
 
-                      </ul>
-                    </div><!--/.nav-collapse -->
+                  </ul>
                 </div>
             </div>
-            <div class="container"><?php
-            
-            include "login.php";
-            
-            ?></div>
+        </div>
+        <div class="container"><?php
+        
+     	// Show current page
+	    include dirname(__FILE__) . '/' . $file . '.php';
+        
+        ?></div>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
