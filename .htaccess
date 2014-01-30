@@ -9,5 +9,5 @@
 	RewriteCond %{REQUEST_FILENAME} !-d
 	
 	# All the URLs
-	RewriteRule ^(home|login)[/]*$ index.php?arquivo=$1&friendly_url=true
+	RewriteRule ^(login)[/]*$ index.php?file=$1&friendly_url=true
 </IfModule>

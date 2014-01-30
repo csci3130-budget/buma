@@ -12,6 +12,7 @@ $p = $_POST;
 $g = $_GET;
 
 // Current page
-$file = isset($p['file']) ? $p['file'] : (isset($g['file']) ? $g['file'] : 'home');
+echo ' file: ';
+echo $file = isset($p['file']) ? $p['file'] : (isset($g['file']) ? $g['file'] : 'login');
 
 ?>

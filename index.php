@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+include_once dirname(__FILE__) . '/config.php';
+
+?><!DOCTYPE html>
     <head>
         <meta charset="utf-8">
         <meta name="author" content="Ruipeng">
@@ -37,7 +41,10 @@
         <div class="container"><?php
         
      	// Show current page
+		echo include dirname(__FILE__);
+		echo $file;
 	    include dirname(__FILE__) . '/' . $file . '.php';
+		//http://web.cs.dal.ca/~wegner/
         
         ?></div>
         <script src="https://code.jquery.com/jquery.js"></script>
