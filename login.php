@@ -1,7 +1,7 @@
 
 
-      <form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Welcome to BUBA</h2>
+      <form class="form-signin" role="form" action="home.php" method="post">
+        <h2 class="form-signin-heading">Welcome to BUMA</h2>
         <input type="text" class="form-control" placeholder="Email address" required autofocus>
         <input type="password" class="form-control" placeholder="Password" required>
         <label class="checkbox checkbox-control">
