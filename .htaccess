@@ -1,13 +1,13 @@
-<IfModule mod_rewrite.c>
+#<IfModule mod_rewrite.c>
 	#Enable rewrite mode
 	RewriteEngine On
 	
 	#If the URL point to a file, direct to it
-	RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-f
 	
 	#If the URL point to a folder, direct to it
-	RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteCond %{REQUEST_FILENAME} !-d
 	
 	# All the URLs
-	RewriteRule ^(login)[/]*$ index.php?file=$1&friendly_url=true
-</IfModule>
+	RewriteRule ^(login|home|add_expense|wish_list|statistics|forgot_password|new_account|add_category)[/]*$ index.php?file=$1&friendly_url=true
+#</IfModule>

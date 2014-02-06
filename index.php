@@ -12,8 +12,9 @@ include_once dirname(__FILE__) . '/config.php';
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" >
         <link href="css/format.css" rel="stylesheet" type="text/css" media="all" />
- 	    <script type="text/javascript" src="js/scripts.js">
-        </script>
+ 	    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+ 	    <!--<script type="text/javascript" src="js/scripts.js"></script>-->
+ 	    <script type="text/javascript" src="js/event.js"></script>
     </head>
 
     <body>
@@ -26,13 +27,13 @@ include_once dirname(__FILE__) . '/config.php';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">BUMA</a>
+                  <a class="navbar-brand" href="home"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;BUMA</a>
                 </div>
                 <div class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="#Add">Add New Expense</a></li>
-                    <li><a href="#Wish">Wish List</a></li>
-                    <li><a href="#Stats">Statistics</a></li>
+                    <li><a href="add_expense"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Expense</a></li> <!--#Add-->
+                    <li><a href="wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
+                    <li><a href="statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
 
                   </ul>
                 </div>
