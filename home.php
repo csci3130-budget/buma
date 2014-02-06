@@ -31,4 +31,4 @@
         </tr>
       </tbody>
 </table>
-<a href="add_category"><button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-plus"></span></button></a>
+<a href="add_budget"><button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-plus"></span></button></a>
