@@ -9,8 +9,10 @@ $(document).ready( function() {
     var sel = $(this).val();
     if(sel == "other") {
 			$('#inputOtherCategory').show();
+                        $('#otherLabel').show();
 		} else {
 			$('#inputOtherCategory').hide();		
+                        $('#otherLabel').hide();
 		}
 	});
 	

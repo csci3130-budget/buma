@@ -18,9 +18,9 @@
 			</div>
     </div>
     <div class="form-group">
-   	    <label for="inputOtherCategory" class="col-sm-2 control-label"></label>
+   	    <label for="inputOtherCategory" class="col-sm-2 control-label">Other:</label>
     	<div class="col-sm-10">
-   			<input type="text" class="form-control" id="inputOtherCategory" placeholder="Other Category">
+   			<input type="text" class="form-control" id="inputOtherCategory" placeholder="Other Category" name="inputCategory">
 		</div>
     </div>
     <div class="form-group">
