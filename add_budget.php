@@ -2,14 +2,14 @@
     <div class="form-group">
    	    <label for="inputAmount" class="col-sm-2 control-label">Amount:</label>
    	    <div class="col-sm-10">
-      		<input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+      		<input type="text" class="form-control" id="inputAmount" name="inputAmount" placeholder="Amount">
     	</div>
     </div>	
     <div class="form-group">
    	    <label for="inputCategory" class="col-sm-2 control-label">Category:</label>
    	    	<div class="col-sm-10">
                                 <!-- This will need to be manually inserted by the database information later on -->
-				<select class="form-control" id="inputCategory">
+				<select class="form-control" id="inputCategory" name="inputCategory">
 	  				<option value="clothing" selected="selected">Clothing</option>
 	  				<option value="food">Food</option>
 	  				<option value="entertainment">Entertainment</option>
@@ -29,3 +29,7 @@
    		 </div>
 	</div>
 </form>
+<div class="alert alert-success alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Budget added</strong>
+</div>
