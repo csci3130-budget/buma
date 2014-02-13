@@ -187,3 +187,72 @@ Malformed field path "" [] []
 [2014-02-08 16:30:00] WelcomeCept.php.INFO: am on page "login/" [] []
 [2014-02-08 16:30:00] WelcomeCept.php.INFO: see "Welcome" [] []
 [2014-02-08 16:30:00] WelcomeCept.php.INFO: PASSED [] []
+[2014-02-08 17:36:08] AddBudgetCept.php.INFO: am on page "/add_budget" [] []
+[2014-02-08 17:36:08] AddBudgetCept.php.INFO: see "Amount" [] []
+[2014-02-08 17:36:08] AddBudgetCept.php.INFO: see "Category" [] []
+[2014-02-08 17:36:08] AddBudgetCept.php.INFO: don't see "Other" [] []
+[2014-02-08 17:36:08] AddBudgetCept.php.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/add_budget</bold><info>BUMA     Toggle navigation       BUMA     Add New Budget    Add New Expense    Wish List    Statistics     	 Amount: 	 		 	 	 Category: 	 	 				ClothingFoodEntertainmentOther 	 Other: 	 			 		 	 	 Add 		 	 	× 	Budget added</info>
+--> does not contain "other". [] []
+[2014-02-08 17:36:08] AddBudgetCept.php.INFO: # FAILED # [] []
+[2014-02-08 17:36:08] AddBudgetCept.php.INFO: PASSED [] []
+[2014-02-08 17:36:08] WelcomeCept.php.INFO: am on page "login/" [] []
+[2014-02-08 17:36:08] WelcomeCept.php.INFO: see "Welcome" [] []
+[2014-02-08 17:36:08] WelcomeCept.php.INFO: PASSED [] []
+[2014-02-08 17:36:27] AddBudgetCept.php.INFO: am on page "/add_budget" [] []
+[2014-02-08 17:36:27] AddBudgetCept.php.INFO: see "Amount" [] []
+[2014-02-08 17:36:27] AddBudgetCept.php.INFO: see "Category" [] []
+[2014-02-08 17:36:27] AddBudgetCept.php.INFO: don't see "Other:" [] []
+[2014-02-08 17:36:27] AddBudgetCept.php.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/add_budget</bold><info>BUMA     Toggle navigation       BUMA     Add New Budget    Add New Expense    Wish List    Statistics     	 Amount: 	 		 	 	 Category: 	 	 				ClothingFoodEntertainmentOther 	 Other: 	 			 		 	 	 Add 		 	 	× 	Budget added</info>
+--> does not contain "other:". [] []
+[2014-02-08 17:36:27] AddBudgetCept.php.INFO: # FAILED # [] []
+[2014-02-08 17:36:27] AddBudgetCept.php.INFO: PASSED [] []
+[2014-02-08 17:36:27] WelcomeCept.php.INFO: am on page "login/" [] []
+[2014-02-08 17:36:27] WelcomeCept.php.INFO: see "Welcome" [] []
+[2014-02-08 17:36:27] WelcomeCept.php.INFO: PASSED [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: am on page "/add_budget" [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: see "Amount" [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: see "Category" [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: don't see "otherInputCategory" [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: fill field "inputAmount","100" [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: select option "inputCategory","Clothing" [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: see "otherInputCategory" [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/add_budget</bold><info>BUMA     Toggle navigation       BUMA     Add New Budget    Add New Expense    Wish List    Statistics     	 Amount: 	 		 	 	 Category: 	 	 				ClothingFoodEntertainmentOther 	 Other: 	 			 		 	 	 Add 		 	 	× 	Budget added</info>
+--> contains "otherinputcategory". [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: # FAILED # [] []
+[2014-02-08 17:36:58] AddBudgetCept.php.INFO: PASSED [] []
+[2014-02-08 17:36:58] WelcomeCept.php.INFO: am on page "login/" [] []
+[2014-02-08 17:36:58] WelcomeCept.php.INFO: see "Welcome" [] []
+[2014-02-08 17:36:58] WelcomeCept.php.INFO: PASSED [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: am on page "/add_budget" [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: see "Amount" [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: see "Category" [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: don't see "otherLabel" [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: fill field "inputAmount","100" [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: select option "inputCategory","Clothing" [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: see "otherLabel" [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/add_budget</bold><info>BUMA     Toggle navigation       BUMA     Add New Budget    Add New Expense    Wish List    Statistics     	 Amount: 	 		 	 	 Category: 	 	 				ClothingFoodEntertainmentOther 	 Other: 	 			 		 	 	 Add 		 	 	× 	Budget added</info>
+--> contains "otherlabel". [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: # FAILED # [] []
+[2014-02-08 17:37:22] AddBudgetCept.php.INFO: PASSED [] []
+[2014-02-08 17:37:22] WelcomeCept.php.INFO: am on page "login/" [] []
+[2014-02-08 17:37:22] WelcomeCept.php.INFO: see "Welcome" [] []
+[2014-02-08 17:37:22] WelcomeCept.php.INFO: PASSED [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: am on page "/add_budget" [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: see "Amount" [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: see "Category" [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: don't see "Other Category" [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: fill field "inputAmount","100" [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: select option "inputCategory","Clothing" [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: see "Other Category" [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/add_budget</bold><info>BUMA     Toggle navigation       BUMA     Add New Budget    Add New Expense    Wish List    Statistics     	 Amount: 	 		 	 	 Category: 	 	 				ClothingFoodEntertainmentOther 	 Other: 	 			 		 	 	 Add 		 	 	× 	Budget added</info>
+--> contains "other category". [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: # FAILED # [] []
+[2014-02-08 17:38:01] AddBudgetCept.php.INFO: PASSED [] []
+[2014-02-08 17:38:01] WelcomeCept.php.INFO: am on page "login/" [] []
+[2014-02-08 17:38:01] WelcomeCept.php.INFO: see "Welcome" [] []
+[2014-02-08 17:38:01] WelcomeCept.php.INFO: PASSED [] []
