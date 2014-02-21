@@ -33,6 +33,10 @@ body {
 #nav {
 }
 
+.my_alert {
+	display: none;
+}	
+
 #nav li {
 	color: #fff;
 	font-weight: bold;
@@ -59,6 +63,11 @@ body {
 	margin: 10px auto 0 auto;
 	display: block;
 }
+
+#new_wish {
+	display: none;
+}	
+
 .wish_text{
 	float: left;
 	padding-right: 10px;
@@ -128,7 +137,7 @@ body {
 	text-decoration: none;
 }
 
-#inputOtherCategory {
+#new_category {
 	display: none;
 }
 

@@ -5,38 +5,46 @@
  **/
 $(document).ready( function() {
 	/*	Clicking on other category, will appear the textfield to fill with the new category	*/
-	$('#inputCategory').change( function(){
-    var sel = $(this).val();
-    if(sel == "other") {
-			$('#inputOtherCategory').show();
-                        $('#otherLabel').show();
+	$('#category').change( function() {
+		var sel = $(this).val();
+		if(sel == "other") {
+			$('#new_category').show();
+			$('#otherLabel').show();
 		} else {
-			$('#inputOtherCategory').hide();		
-                        $('#otherLabel').hide();
+			$('#new_category').hide();	
+			$('#otherLabel').hide();
 		}
 	});
-});
+	
+	if ($("#add_budget_form select[name='category']").val() == "other") {
+		$('#new_category').show();
+		$('#otherLabel').show();
+	}
 
 	/*	Ajax for add_budget form	*/
-	jQuery('#btn_add_budget_form').click(function(){
-		var form_data = jQuery("#add_budget_form").serialize(),
-			amount = jQuery("#add_budget_form input[name='amount']").val(),
-			category = jQuery("#add_budget_form input[name='category']").val(),
-			new_category = jQuery("#add_budget_form input[name='new_category']").val(),
-			message = jQuery("#add_budget_form .alert.alert-success.alert-dismissable strong");
-		if (amount == "undefined" || amount == "") message.html("Fill the AMOUNT field correctly.");
-		else if (category == "undefined" || category == "") message.html("Fill the CATEGORY field correctly.");
-		else if (new_category == "undefined" || new_category == "") message.html("Fill the OTHER field correctly.");
+	$('#btn_add_budget_form').click(function(){
+		var form_data = $("#add_budget_form").serialize(),
+			amount = $("#add_budget_form input[name='amount']").val(),
+			category = $("#add_budget_form select[name='category']").val(),
+			new_category = $("#add_budget_form input[name='new_category']").val(),
+			message = $("#add_budget_form .alert"),
+			add_category = false;
+		message.hide().removeClass("alert-success");
+		if (amount == "undefined" || amount == "") message.show().html("Fill the AMOUNT field correctly.");
+		else if (category == "undefined" || category == "") message.show().html("Fill the CATEGORY field correctly.");
+		else if (category == "other" && (new_category == "undefined" || new_category == "")) message.show().html("Fill the OTHER field correctly.");
 		else {
-			jQuery.ajax({
+			if (category == "other") add_category = true;
+			alert("Category added.");
+			$.ajax({
 				type: "POST",
 				url: "/~wegner/add_budget_post.php",
 				data: form_data,
 				success: function(result) {
-					message.html(result);
+					if (result == "Budget added.") message.addClass("alert-success");
+					message.show().html(result);
 				}
 			});
 		}
 	});
 });
-
