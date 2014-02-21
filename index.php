@@ -1,5 +1,7 @@
 <?php
-
+if (!ini_get('date.timezone')) {
+	date_default_timezone_set('America/Anguilla');
+}
 include_once dirname(__FILE__) . '/config.php';
 
 ?><!DOCTYPE html>

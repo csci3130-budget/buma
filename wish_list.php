@@ -1,17 +1,17 @@
 <h1 class="page-title">Wish List</h1>
 <div class="container">
-	<p class="wish_text">Laptop</p>
+	<div class="align-bar"><h5 class="wish_text">Laptop</h5><h5 class="wish_text">$1000.00</h5></div>
 	<div class="progress progress-striped active">
-		<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width: 80%;"></div>
 	</div>
-	<h5 class="wish_progress_text">$100.00</h5>
-	<p class="wish_text">TV</p>
+	<button id="nowrap" class="edit btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button><span class="btn-space"></span><button class="complete btn btn-default"><span class="glyphicon glyphicon-ok"></span></button><span class="btn-space"><button class="remove btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br /><br />
+
+	<div class="align-bar"><h5 class="wish_text">TV</h5><h5 class="wish_text">$100.00</h5></div>
 	<div class="progress progress-striped active">
-		<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 8%;"></div>
+		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width: 8%;"></div></div>
+	<button id="nowrap" class="edit btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button><span class="btn-space"></span><button class="complete btn btn-default"><span class="glyphicon glyphicon-ok"></span></button><span class="btn-space"><button class="remove btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>
 	</div>
-	<h5 class="wish_progress_text">$1000.00</h5>
-	<p class="saved-text">Saved: $80.00</p>
-	<br />
+	<h5 class="saved-text">Saved: $80.00</h5>
 	<div class="col-sm-offset-2 col-sm-10 wish-btn">    	
 		<button id="my_wish" class="btn btn-success wish">New</button>
 	</div>
