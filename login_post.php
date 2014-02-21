@@ -15,6 +15,8 @@ $login->setEmail($email);
 $login->setPassword($password);
 
 // Test if the user is logged
-$logged = $login->userLogged()
+if ($logged = $login->logUserIn()) {
+	echo 'Logged in.';
+} else echo 'Please fill the fields correctly.';
 
 ?>

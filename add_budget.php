@@ -28,8 +28,7 @@
             <button id="btn_add_budget_form" class="btn btn-lg btn-success btn-block" type="button">Add</button>
    		 </div>
 	</div>
+
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <div class="alert"></div>
 </form>
-<div class="alert alert-success alert-dismissable">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <strong>Budget added</strong>
-</div>

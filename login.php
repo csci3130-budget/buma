@@ -1,4 +1,4 @@
-<form class="form-signin" role="form">
+<form class="form-signin" role="form" id="login_form">
     <h2 class="form-signin-heading">Welcome to BUMA</h2>
     <input type="text" class="form-control" name="email" placeholder="Email address" required autofocus>
     <input type="password" class="form-control" name="password" placeholder="Password" required>
@@ -6,6 +6,7 @@
       <input type="checkbox" value="remember-me"> Remember me
     </label>
     <button type="button" class="btn btn-link forgot-control">Forgot Password</button>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+    <button class="btn btn-lg btn-primary btn-block" id="btn_login_form" type="button">Log in</button>
 	<button class="btn btn-default btm-new-account" type="button">Create New Account</button>
+    <div class="alert"></div>
 </form>

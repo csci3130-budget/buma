@@ -5,7 +5,7 @@ include_once dirname(__FILE__) . '/../config.php';
 // Create a class for get and manage form data
 class Budget {
     public $budget_id;
-    public $user_id;
+    //public $user_id;
     public $category_id;
     public $amount;
 
@@ -38,37 +38,35 @@ class Budget {
 		$this->budget_id = $budget_id_form;
     }
 	
-    public function setUserId($user_id_form) {
+    /*public function setUserId($user_id_form) {
 		$this->user_id = $user_id_form;
-    }
+    }*/
 	
     public function setCategoryId($category_id_form) {
 		$this->category_id = $category_id_form;
     }
 	
-    public function setAmount($amount_id_form) {
-		$this->amount_id = $amount_id_form;
+    public function setAmount($amount_form) {
+		$this->amount = $amount_form;
     }
 	
 	public function addBudget() {
 		// Connect to the database
-		/*$connection = new createConnection();
+		$connection = new createConnection();
 		$connection->connectToDatabase();
 		
 		// Insert the budget
-		/*$sql = 'INSERT INTO budget
-				(user_id,
-				 category_id,
+		$sql = 'INSERT INTO ' . $connection->database . '.budget
+				(category_id,
 				 amount)
 				VALUES
-				("' . htmlentities($user_id) . '",
-				 "' . htmlentities($category_id) . '",
-				 "' . htmlentities($amount) . '")';
+				("' . htmlentities($this->category_id) . '",
+				 "' . htmlentities($this->amount) . '")';
 		$return = $connection->runSql($sql);
 		// Close database connection
-		$connection->closeConnection();*/
+		$connection->closeConnection();
 		
-		return $return = 0;
+		return $return . $sql;
 	}
 	
 	public function editBudget() {
@@ -78,9 +76,8 @@ class Budget {
 		
 		// Edit the budget
 		$sql = 'UPDATE budget SET
-				user_id = "' . htmlentities($user_id) . '",
-				category_id = "' . htmlentities($category_id) . '",
-				amount = "' . htmlentities($amount) . '"
+				category_id = "' . htmlentities($this->category_id) . '",
+				amount = "' . htmlentities($this->amount) . '"
 				WHERE budget_id = "' . htmlentities($budget_id) . '"';
 		
 		$return = $connection->runSql($sql);

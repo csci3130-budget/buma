@@ -2,26 +2,42 @@
 
 // Create a class for make connection
 class createConnection {
-    var $host="localhost";
-    var $username="group11";    // specify the sever details for mysql
-    var $password="group11";
-    var $database="group11";
+    /*var $host = "localhost";
+    var $username = "group11";
+    var $password = "group11";
+    var $database = "group11";
+    var $myconn;*/
+	
+	var $host = "db.cs.dal.ca";
+    var $username = "wegner";
+    var $password = "B00664377";
+    var $database = "wegner";
     var $myconn;
 
 	// Create a function for connect database
     function connectToDatabase() {
+		// Try to connect
         $conn = mysql_connect($this->host,$this->username,$this->password);
-        if(!$conn)// testing the connection
-            die ("Cannot connect to the database");
-        else {
-            $this->myconn = $conn;
-            //echo "Connection established";
-        }
-        return $this->myconn;
+
+		// Testing the connection
+        if(!$conn) die ("Cannot connect to the database");
+        else $this->myconn = $conn;
+
+        return $conn;
     }
 	
+	// Run MySQL query without return of values from the database
 	function runSql($sql) {
-		$query = mysql_query($sql, $myconn);
+		// Run the SQL
+		return mysql_query($sql, $this->myconn);
+	}
+	
+	// Run MySQL query with return of values from the database
+	function runSqlWithReturn($sql) {
+		// Run the SQL
+		$query = mysql_query($sql, $this->myconn);
+		
+		// Get the result from the database
 		return mysql_fetch_assoc($query);
 	}
 
@@ -38,10 +54,9 @@ class createConnection {
          echo "Database selected..";       
     }*/
 
-	// Close the connection
     function closeConnection() {
+		// Close the connection
         mysql_close($this->myconn);
-        //echo "Connection closed";
     }
 }
 
