@@ -30,5 +30,11 @@
    		 </div>
 	</div>
 
+<<<<<<< HEAD
     <div class="alert my_alert"></div>
 </form>
+=======
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <div class="alert"></div>
+</form>
+>>>>>>> bb3a44ab4aa232c9a77b06a3410a6222da44fded

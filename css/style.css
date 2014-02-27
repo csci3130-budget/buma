@@ -113,12 +113,11 @@ text-align: center;
      border:1px solid white;
 }
 
-#login_form {
-	width: 290px;
-	margin: 0 auto;
+.navbar-nav .navbar-text {
+	text-align: center;
 }
 
-#login_form .title {
+/*#login_form .title {
 	font-weight: bold;
 	text-align: center;
 	font-size: 18px;
@@ -146,6 +145,10 @@ text-align: center;
 	font-size: 14px;
 	color: blue;
 	text-decoration: none;
+}*/
+
+.btm-new-account {
+	margin-bottom: 15px;
 }
 
 #new_category {
@@ -183,6 +186,11 @@ div.alert {
 	border-width:5px;
     border-style:solid;	
     border-color:Red;
+}
+
+#add_budget_form .alert,
+#login_form .alert {
+	display: none;
 }
 	
 div.normal {

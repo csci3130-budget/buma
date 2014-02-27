@@ -26,47 +26,46 @@
                       <a class="navbar-brand" href="#">BUBA</a>
                     </div>
                     <div class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                    <li><a href="index.php?file=add_budget"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Budget</a></li> <!--#Add-->
-                    <li><a href="index.php?file=add_expense"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Add New Expense</a></li> <!--#Add-->
-                    <li><a href="index.php?file=wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
-                    <li><a href="index.php?file=statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
-				  </ul>
-                </div><!--/.nav-collapse -->
+						<ul class="nav navbar-nav">
+							<li><a href="index.php?file=add_budget"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Budget</a></li> <!--#Add-->
+							<li><a href="index.php?file=add_expense"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Add New Expense</a></li> <!--#Add-->
+							<li><a href="index.php?file=wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
+							<li><a href="index.php?file=statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
+						</ul>
+					</div><!--/.nav-collapse -->
                 </div>
             </div>
             <div class="container">
-			
-		<!--login box-->	
-	<div id="login" class="visible widget-box no-border">
-		<form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Welcome to BUBA</h2>
-        <input type="text" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
-        <label class="checkbox checkbox-control">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
+
+	<!--This is the new sign up box -->
+	<div id="signup" class="widget-box no-border">
+		<div class="widget-body">
 		
-       <a href="index.php?file=forget">
-	   <button type="button" class="btn btn-link forgot-control">Forgot Password</button>
-	   </a>
-	   
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-		<a href="index.php?file=register">
-		<button class="btn btn-default btm-new-account" type="button">Create New Account</button></a>
-      </form>	
-	</div>
-	
-	
+			<h2 class="form-signin-heading"> New User Registration</h2>
+			<h4>Enter your details to begin:</h4>
+			<form>
+				 <fieldset>
+					<input type="email" class="form-control" placeholder="Email" required autofocus/>
+					<input type="text" class="form-control" placeholder="Username" required />
+					<input type="password" class="form-control" placeholder="Password" required />
+					<input type="password" class="form-control" placeholder="Repeat password" required/>
+					
+				<label class="checkbox checkbox-control">
+					<input type="checkbox">I accept the <a href="BUMA User Agreement.pdf">User Agreement</a>
+				</label>			
+					<button type="reset" onclick="reset()" class="btn btn-lg btn-block">Reset</button>
+					<button class="btn btn-lg btn-primary btn-block btn-success">Register</button>				
+				</fieldset>
+			
+			<a href="index.php?file=login">Back to login</a>
+		
+			</form>
+			</div>
 		</div>
+		
+		
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-		function show_box(id) {
-		$('.widget-box.visible').removeClass('visible');
-		$('#'+id).addClass('visible');
-		}
-		</script>
 		
 	
 		<script type="text/javascript">
@@ -75,6 +74,10 @@
 		api_url: '//api.viglink.com/api', 
 		key: '0dff9ade2d1125af6c910069b6d6e155', reaffiliate: false
 		};
+		function reset()
+		{
+		alert("I am an alert box!");
+		}
 		</script>
 	
 		<script type="text/javascript" async="" src="./BUMA_files/vglnk.js">

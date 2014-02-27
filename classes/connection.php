@@ -26,14 +26,22 @@ class createConnection {
         return $conn;
     }
 	
+	// Run MySQL query without return of values from the database
 	function runSql($sql) {
 		// Run the SQL
 		return mysql_query($sql, $this->myconn);
 	}
 	
+<<<<<<< HEAD
 	function runSqlWithReturn($sql) {
 		// Run the SQL
 		$query = mysql_query($sql, $myconn);
+=======
+	// Run MySQL query with return of values from the database
+	function runSqlWithReturn($sql) {
+		// Run the SQL
+		$query = mysql_query($sql, $this->myconn);
+>>>>>>> bb3a44ab4aa232c9a77b06a3410a6222da44fded
 		
 		// Get the result from the database
 		return mysql_fetch_assoc($query);

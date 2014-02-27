@@ -56,7 +56,11 @@ class Budget {
 		$connection->connectToDatabase();
 		
 		// Insert the budget
+<<<<<<< HEAD
 		$sql = 'INSERT INTO budget
+=======
+		$sql = 'INSERT INTO ' . $connection->database . '.budget
+>>>>>>> bb3a44ab4aa232c9a77b06a3410a6222da44fded
 				(category_id,
 				 amount)
 				VALUES
@@ -76,8 +80,13 @@ class Budget {
 		
 		// Edit the budget
 		$sql = 'UPDATE budget SET
+<<<<<<< HEAD
 				category_id = "' . htmlentities($category_id) . '",
 				amount = "' . htmlentities($amount) . '"
+=======
+				category_id = "' . htmlentities($this->category_id) . '",
+				amount = "' . htmlentities($this->amount) . '"
+>>>>>>> bb3a44ab4aa232c9a77b06a3410a6222da44fded
 				WHERE budget_id = "' . htmlentities($budget_id) . '"';
 		
 		$return = $connection->runSql($sql);
