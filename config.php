@@ -19,8 +19,8 @@ $login = new Login;
 
 // Test if the user is logged
 if ($logged = $login->userLogged()) {
-	$user_id = $_SESSION['user_id'];
-	$user_name = $_SESSION['user_name'];
+	/*$user_id = $_SESSION['user_id'];
+	$user_name = $_SESSION['user_name'];*/
 }
 
 ?>
