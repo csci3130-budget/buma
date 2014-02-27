@@ -1,9 +1,5 @@
 <?php
-if (!ini_get('date.timezone')) {
-	date_default_timezone_set('America/Anguilla');
-}
 include_once dirname(__FILE__) . '/config.php';
-
 ?><!DOCTYPE html>
     <head>
         <meta charset="utf-8">
@@ -34,10 +30,10 @@ include_once dirname(__FILE__) . '/config.php';
                 </div>
                 <div class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="index.php?file=add_budget"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Budget</a></li> <!--#Add-->
-                    <li><a href="index.php?file=add_expense"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Add New Expense</a></li> <!--#Add-->
-                    <li><a href="index.php?file=wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
-                    <li><a href="index.php?file=statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
+                    <li><a href="index.php?file=add_budget"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Budget</a></li> <!-- #Add -->
+                    <li><a href="index.php?file=add_expense"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Add New Expense</a></li> <!-- #Add -->
+                    <li><a href="index.php?file=wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!-- #Wish -->
+                    <li><a href="index.php?file=statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!-- #Stats -->
                   </ul>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
