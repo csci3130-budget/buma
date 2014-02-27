@@ -29,7 +29,6 @@ $(document).ready( function() {
 			new_category = $("#add_budget_form input[name='new_category']").val(),
 			message = $("#add_budget_form .alert"),
 			add_category = false;
-<<<<<<< HEAD
 			message.hide().removeClass("alert-success");
 			
 			if (amount == "undefined" || amount == "") {
@@ -98,7 +97,6 @@ $(document).ready( function() {
 		}	
 	});
 });
-=======
 		message.hide().removeClass("alert-success");
 		if (amount == "undefined" || amount == "") message.show().html("Fill the AMOUNT field correctly.");
 		else if (category == "undefined" || category == "") message.show().html("Fill the CATEGORY field correctly.");
@@ -145,4 +143,3 @@ $(document).ready( function() {
 		return false;
 	});
 });
->>>>>>> bb3a44ab4aa232c9a77b06a3410a6222da44fded

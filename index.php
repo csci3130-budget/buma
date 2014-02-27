@@ -20,7 +20,6 @@ include_once dirname(__FILE__) . '/config.php';
         <script src="js/bootstrap.min.js"></script>
     </head>
 
-<<<<<<< HEAD
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -40,7 +39,6 @@ include_once dirname(__FILE__) . '/config.php';
                     <li><a href="index.php?file=wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
                     <li><a href="index.php?file=statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
                   </ul>
-=======
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -67,7 +65,6 @@ include_once dirname(__FILE__) . '/config.php';
 							  <li><a href="index.php?file=wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
 							  <li><a href="index.php?file=statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->';
                     ?></ul>
->>>>>>> bb3a44ab4aa232c9a77b06a3410a6222da44fded
                 </div>
             </div>
         </div>
