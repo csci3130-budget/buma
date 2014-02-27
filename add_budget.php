@@ -22,6 +22,7 @@
    			<input type="text" class="form-control" id="new_category" name="new_category" placeholder="New Category">
 		</div>
     </div>
+
     <div class="form-group">
    		 <div class="col-sm-offset-2 col-sm-10">    	
     	    <!--<button class="btn btn-lg btn-success btn-block" type="submit">Add</button>-->
