@@ -31,34 +31,54 @@
                     <li><a href="index.php?file=add_expense"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Add New Expense</a></li> <!--#Add-->
                     <li><a href="index.php?file=wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
                     <li><a href="index.php?file=statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
-				  </ul>
+                  </ul>
                 </div><!--/.nav-collapse -->
                 </div>
             </div>
             <div class="container">
+	
+			<!--forgot page-->
+		<?php
+			// display form if user has not clicked submit
+			if (!isset($_POST["submit"]))
+			{
+		?>
+
+  
+		<form method="post" action="<?php echo $_SERVER["PHP_SELF"];>
+			<div id="forgot" class="widget-box no-border">
+				<h2 class="form-signin-heading">Retrieve Password</h2>
+			<form>
+				<input type="text" class="form-control" name="sender" placeholder="Enter your email and to receive instructions" required autofocus><br/>
+				<input name="submit" class="btn btn-lg btn-primary btn-block btn-danger" type="submit" value="Send me!">
+			</form>
 			
-		<!--login box-->	
-	<div id="login" class="visible widget-box no-border">
-		<form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Welcome to BUBA</h2>
-        <input type="text" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
-        <label class="checkbox checkbox-control">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
+			<div >
+			<a href="index.php?file=login" >Back to login</a>
+			</div>
+			
+			</div>
+		</form>
 		
-       <a href="index.php?file=forget">
-	   <button type="button" class="btn btn-link forgot-control">Forgot Password</button>
-	   </a>
-	   
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-		<a href="index.php?file=register">
-		<button class="btn btn-default btm-new-account" type="button">Create New Account</button></a>
-      </form>	
-	</div>
-	
-	
-		</div>
+  <?php 
+	}
+	else
+		// the user has submitted the form
+	{
+	// Check if the "sender" input field is filled out
+	if (isset($_POST["sender"]))
+		{
+		$sender = $_POST["sender"]; // sender
+		$subject = "Get your new password";
+		$message = "Please go to your email account to reset your password";
+		//
+		// send mail
+		mail($sender,$subject,$message,"From: \n");
+		echo "Email has been sent,Please check your email.";
+    }
+  }
+?>
+
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript">
