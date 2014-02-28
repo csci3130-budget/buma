@@ -13,15 +13,19 @@
 		<script language=JavaScript>
 		function InputCheck(RegForm)
 		{
-			if (RegForm.email.value == "")
+		var passwordcheck=
+		/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+		
+		if (RegForm.email.value == "")
 		{
 			alert("Email can not be empty!");
 			RegForm.email.focus();
 			return (false);
 		}
-			if (RegForm.user_id.value == "")
+		//1 UPcace have one lower, comebine with digits allows symbols, no spaces
+			if (RegForm.user_id.value == "" || RegForm.user_id.value.length <= 6)
 		{
-			alert("Account name is empty!");
+			alert("Account name is empty or less than 6");
 			RegForm.user_id.focus();
 			return (false);
 		}
@@ -33,7 +37,18 @@
 		}
 		if (RegForm.password.value == "")
 		{
-			alert("Password is empty!");
+			alert("Password is empty");
+			RegForm.password.focus();
+			return (false);
+		}
+		
+		if (RegForm.password.value.match(passwordcheck) )
+		{
+			
+		}
+		else
+		{
+			alert("Password should be 6-16 digits contain at least one lowercase letter, one uppercase letter, one numeric digit");
 			RegForm.password.focus();
 			return (false);
 		}
@@ -43,6 +58,9 @@
 			RegForm.repass.focus();
 			return (false);
 		}
+		if (document.getElementById("agreement").checked==false)
+			alert("Please accept the user agreement");
+			return (false);
 		}
 	
 	
@@ -83,13 +101,13 @@
 			<form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
 				 <fieldset>
 					<input type="email" class="form-control" 	id="email"		name="email" 	placeholder="Email"  autofocus/>
-					<input type="text" class="form-control"  	id="user_id"	name="user_id"	placeholder="Your account name"/>
+					<input type="text" class="form-control"  	id="user_id"	name="user_id"	placeholder="Your account name(at least 6 digits)"/>
 					<input type="text" class="form-control"  	id="username" 	name="name" 	placeholder="Name"/>
-					<input type="password" class="form-control" id="password" 	name="password"	placeholder="Password"/>
+					<input type="password" class="form-control" id="password" 	name="password"	placeholder="Password(at least 6 digits)"/>
 					<input type="password" class="form-control" id="repass" 	name="repass"	placeholder="Repeat password"/>
 					
 				<label class="checkbox checkbox-control">
-					<input type="checkbox" name="agreement">I accept the <a href="BUMA User Agreement.pdf">User Agreement</a>
+					<input type="checkbox" id="agreement">I accept the <a href="BUMA User Agreement.pdf">User Agreement</a>
 				</label>			
 					<button type="reset" onclick="reset()" class="btn btn-lg btn-block">Reset</button>
 					<button class="btn btn-lg btn-primary btn-block btn-success">Register</button>				
@@ -112,10 +130,7 @@
 		api_url: '//api.viglink.com/api', 
 		key: '0dff9ade2d1125af6c910069b6d6e155', reaffiliate: false
 		};
-		function reset()
-		{
-		alert("I am an alert box!");
-		}
+
 		</script>
 	
 		<script type="text/javascript" async="" src="./BUMA_files/vglnk.js">
