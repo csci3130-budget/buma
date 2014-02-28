@@ -10,6 +10,43 @@
         <link href="css/format.css" rel="stylesheet" type="text/css" media="all" />
  	    <script type="text/javascript" src="js/scripts.js">
         </script>
+		<script language=JavaScript>
+		function InputCheck(RegForm)
+		{
+			if (RegForm.email.value == "")
+		{
+			alert("Email can not be empty!");
+			RegForm.email.focus();
+			return (false);
+		}
+			if (RegForm.user_id.value == "")
+		{
+			alert("Account name is empty!");
+			RegForm.user_id.focus();
+			return (false);
+		}
+			if (RegForm.username.value == "")
+		{
+			alert("Username is empty!");
+			RegForm.username.focus();
+			return (false);
+		}
+		if (RegForm.password.value == "")
+		{
+			alert("Password is empty!");
+			RegForm.password.focus();
+			return (false);
+		}
+		if (RegForm.repass.value != RegForm.password.value)
+		{
+			alert("Passwords not match!");
+			RegForm.repass.focus();
+			return (false);
+		}
+		}
+	
+	
+		</script>
     </head>
 
     <body>
@@ -43,15 +80,16 @@
 		
 			<h2 class="form-signin-heading"> New User Registration</h2>
 			<h4>Enter your details to begin:</h4>
-			<form>
+			<form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
 				 <fieldset>
-					<input type="email" class="form-control" placeholder="Email" required autofocus/>
-					<input type="text" class="form-control" placeholder="Username" required />
-					<input type="password" class="form-control" placeholder="Password" required />
-					<input type="password" class="form-control" placeholder="Repeat password" required/>
+					<input type="email" class="form-control" 	id="email"		name="email" 	placeholder="Email"  autofocus/>
+					<input type="text" class="form-control"  	id="user_id"	name="user_id"	placeholder="Your account name"/>
+					<input type="text" class="form-control"  	id="username" 	name="name" 	placeholder="Name"/>
+					<input type="password" class="form-control" id="password" 	name="password"	placeholder="Password"/>
+					<input type="password" class="form-control" id="repass" 	name="repass"	placeholder="Repeat password"/>
 					
 				<label class="checkbox checkbox-control">
-					<input type="checkbox">I accept the <a href="BUMA User Agreement.pdf">User Agreement</a>
+					<input type="checkbox" name="agreement">I accept the <a href="BUMA User Agreement.pdf">User Agreement</a>
 				</label>			
 					<button type="reset" onclick="reset()" class="btn btn-lg btn-block">Reset</button>
 					<button class="btn btn-lg btn-primary btn-block btn-success">Register</button>				
