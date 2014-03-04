@@ -2,7 +2,7 @@
 // AddBudget
 $I = new WebGuy($scenario);
 $I->wantTo('Add a new budget');
-$I->amOnPage('/index.php?file=wish_list');
+$I->amOnPage('/index.php?file=add_budget');
 
 // Looks for Amount and Category labels
 $I->see('Amount');
