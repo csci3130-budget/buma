@@ -2,11 +2,12 @@
 // Delete Wish
 $I = new WebGuy($scenario);
 $I->wantTo('Remove wish');
-$I->amOnPage('/index.php?file=add_budget');
+$I->amOnPage('/index.php?file=wish_list');
 
 // Update
-$I->click('Add');
+$I->click('delete');
 $I->click('Ok');
 
-$I->see('Wish removed.');
+// Will see 'Wish removed' if test has passed'
+$I->see('Wish removed');
 ?>
