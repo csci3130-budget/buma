@@ -10,6 +10,61 @@
         <link href="css/format.css" rel="stylesheet" type="text/css" media="all" />
  	    <script type="text/javascript" src="js/scripts.js">
         </script>
+		<script language=JavaScript>
+		function InputCheck(RegForm)
+		{
+		var passwordcheck=
+		/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+		
+		if (RegForm.email.value == "")
+		{
+			alert("Email can not be empty!");
+			RegForm.email.focus();
+			return (false);
+		}
+		//1 UPcace have one lower, comebine with digits allows symbols, no spaces
+			if (RegForm.user_id.value == "" || RegForm.user_id.value.length <= 6)
+		{
+			alert("Account name is empty or less than 6");
+			RegForm.user_id.focus();
+			return (false);
+		}
+			if (RegForm.username.value == "")
+		{
+			alert("Username is empty!");
+			RegForm.username.focus();
+			return (false);
+		}
+		if (RegForm.password.value == "")
+		{
+			alert("Password is empty");
+			RegForm.password.focus();
+			return (false);
+		}
+		
+		if (RegForm.password.value.match(passwordcheck) )
+		{
+			
+		}
+		else
+		{
+			alert("Password should be 6-16 digits contain at least one lowercase letter, one uppercase letter, one numeric digit");
+			RegForm.password.focus();
+			return (false);
+		}
+		if (RegForm.repass.value != RegForm.password.value)
+		{
+			alert("Passwords not match!");
+			RegForm.repass.focus();
+			return (false);
+		}
+		if (document.getElementById("agreement").checked==false)
+			alert("Please accept the user agreement");
+			return (false);
+		}
+	
+	
+		</script>
     </head>
 
     <body>
@@ -43,15 +98,16 @@
 		
 			<h2 class="form-signin-heading"> New User Registration</h2>
 			<h4>Enter your details to begin:</h4>
-			<form>
+			<form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
 				 <fieldset>
-					<input type="email" class="form-control" placeholder="Email" required autofocus/>
-					<input type="text" class="form-control" placeholder="Username" required />
-					<input type="password" class="form-control" placeholder="Password" required />
-					<input type="password" class="form-control" placeholder="Repeat password" required/>
+					<input type="email" class="form-control" 	id="email"		name="email" 	placeholder="Email"  autofocus/>
+					<input type="text" class="form-control"  	id="user_id"	name="user_id"	placeholder="Your account name(at least 6 digits)"/>
+					<input type="text" class="form-control"  	id="username" 	name="username" 	placeholder="Name"/>
+					<input type="password" class="form-control" id="password" 	name="password"	placeholder="Password(at least 6 digits)"/>
+					<input type="password" class="form-control" id="repass" 	name="repass"	placeholder="Repeat password"/>
 					
 				<label class="checkbox checkbox-control">
-					<input type="checkbox">I accept the <a href="BUMA User Agreement.pdf">User Agreement</a>
+					<input type="checkbox" id="agreement">I accept the <a href="BUMA User Agreement.pdf">User Agreement</a>
 				</label>			
 					<button type="reset" onclick="reset()" class="btn btn-lg btn-block">Reset</button>
 					<button class="btn btn-lg btn-primary btn-block btn-success">Register</button>				
@@ -74,10 +130,7 @@
 		api_url: '//api.viglink.com/api', 
 		key: '0dff9ade2d1125af6c910069b6d6e155', reaffiliate: false
 		};
-		function reset()
-		{
-		alert("I am an alert box!");
-		}
+
 		</script>
 	
 		<script type="text/javascript" async="" src="./BUMA_files/vglnk.js">
