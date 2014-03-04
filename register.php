@@ -102,7 +102,7 @@
 				 <fieldset>
 					<input type="email" class="form-control" 	id="email"		name="email" 	placeholder="Email"  autofocus/>
 					<input type="text" class="form-control"  	id="user_id"	name="user_id"	placeholder="Your account name(at least 6 digits)"/>
-					<input type="text" class="form-control"  	id="username" 	name="name" 	placeholder="Name"/>
+					<input type="text" class="form-control"  	id="username" 	name="username" 	placeholder="Name"/>
 					<input type="password" class="form-control" id="password" 	name="password"	placeholder="Password(at least 6 digits)"/>
 					<input type="password" class="form-control" id="repass" 	name="repass"	placeholder="Repeat password"/>
 					
