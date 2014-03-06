@@ -9,17 +9,21 @@ $budget_id = isset($p['budget_id']) ? $p['budget_id'] : (isset($g['budget_id']) 
 //$user_id = isset($p['user_id']) ? $p['user_id'] : (isset($g['user_id']) ? $g['user_id'] : '');
 $category_id = isset($p['category_id']) ? $p['category_id'] : (isset($g['category_id']) ? $g['category_id'] : '');
 $amount = isset($p['amount']) ? $p['amount'] : (isset($g['amount']) ? $g['amount'] : '');
+$new_category = isset($p['new_category']) ? $p['new_category'] : (isset($g['new_category']) ? $g['new_category'] : '');
 
 // Intantiate class
 $budget = new Budget;
+
+if ($add_category = ($category_id == 'other' && strlen($new_category)))
+	$category_id = $budget->addCategory($new_category);
 
 if ($budget_id) $budget->setBudgetId($budget_id);
 $budget->setCategoryId($category_id);
 $budget->setAmount($amount);
 
 if (!$budget_id) {
-	/*if (*/echo $result = $budget->addBudget();/*) */echo "Budget added.";
-	/*else echo "An internal error occurred." . $result;*/
+	if ($result = $budget->addBudget()) echo "Budget added.";
+	else echo "An internal error occurred." . $result;
 } else {
 	/*if ($result = $budget->editBucket())*/ echo "Budget edited.";
 	/*else echo "An internal error occurred." . $result;*/
