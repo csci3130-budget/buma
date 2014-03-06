@@ -62,15 +62,7 @@
 	
 		</div>
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-		function show_box(id) {
-		$('.widget-box.visible').removeClass('visible');
-		$('#'+id).addClass('visible');
-		}
-		</script>
-		
-	
+        <script src="js/bootstrap.min.js"></script>	
 		<script type="text/javascript">
 		var vglnk = vglnk || 
 		{
