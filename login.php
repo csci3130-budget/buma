@@ -47,12 +47,14 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
 		
-       <a href="index.php?file=forget">
+       <a href="forgot.php">
 	   <button type="button" class="btn btn-link forgot-control">Forgot Password</button>
 	   </a>
 	   
         <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-		<a href="index.php?file=register">
+		
+		
+		<a href="register.php">
 		<button class="btn btn-default btm-new-account" type="button">Create New Account</button></a>
       </form>	
 	</div>
