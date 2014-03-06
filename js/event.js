@@ -47,7 +47,7 @@ $(document).ready( function() {
 			//if (category == "other") add_category = true;
 			$.ajax({
 				type: "POST",
-				url: "/~wegner/add_budget_post.php",
+				url: "/add_budget_post.php",
 				data: form_data,
 				success: function(result) {
 					message.show().html(result);
@@ -108,7 +108,7 @@ $(document).ready( function() {
 			alert("Category added.");
 			$.ajax({
 				type: "POST",
-				url: "/~wegner/add_budget_post.php",
+				url: "/add_budget_post.php",
 				data: form_data,
 				success: function(result) {
 					if (result == "Budget added.") message.addClass("alert-success");
@@ -131,12 +131,12 @@ $(document).ready( function() {
 		else {
 			$.ajax({
 				type: "POST",
-				url: "/~wegner/login_post.php",
+				url: "/login_post.php",
 				data: form_data,
 				success: function(result) {
 					if (result == "Logged in.") {
 						message.addClass("alert-success");
-						window.location.replace("/~wegner/index.php?file=home");
+						window.location.replace("/index.php?file=home");
 					}
 					message.show().html(result);
 				}
@@ -159,12 +159,12 @@ $(document).ready( function() {
 		else {
 			$.ajax({
 				type: "POST",
-				url: "/~wegner/login_post.php",
+				url: "/login_post.php",
 				data: form_data,
 				success: function(result) {
 					if (result == "Logged in.") {
 						message.addClass("alert-success");
-						window.location.replace("/~wegner/index.php?file=home");
+						window.location.replace("/index.php?file=home");
 					}
 					message.show().html(result);
 				}

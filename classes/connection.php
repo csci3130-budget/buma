@@ -2,17 +2,17 @@
 
 // Create a class for make connection
 class createConnection {
-    /*var $host = "localhost";
+    var $host = "localhost";
     var $username = "group11";
     var $password = "group11";
     var $database = "group11";
-    var $myconn;*/
+    var $myconn;
 	
-	var $host = "db.cs.dal.ca";
+	/*var $host = "db.cs.dal.ca";
     var $username = "wegner";
     var $password = "B00664377";
     var $database = "wegner";
-    var $myconn;
+    var $myconn;*/
 
 	// Create a function for connect database
     function connectToDatabase() {
