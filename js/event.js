@@ -25,40 +25,42 @@ $(document).ready( function() {
 	$('#btn_add_budget_form').click(function(){
 		var form_data = $("#add_budget_form").serialize(),
 			amount = $("#add_budget_form input[name='amount']").val(),
-			category = $("#add_budget_form select[name='category']").val(),
+			category = $("#add_budget_form select[name='category_id']").val(),
 			new_category = $("#add_budget_form input[name='new_category']").val(),
 			message = $("#add_budget_form .alert"),
 			add_category = false;
 			message.hide().removeClass("alert-success");
 			
-			if (amount == "undefined" || amount == "") {
-				message.show().html("Fill the AMOUNT field correctly.");
-				message.addClass("alert-failure");
-			}	
-			else if (category == "undefined" || category == "") {
-				message.show().html("Fill the CATEGORY field correctly.");
-				message.addClass("alert-success");
-			}			
-			else if (category == "other" && (new_category == "undefined" || new_category == "")) {
-				message.show().html("Fill the OTHER field correctly.");
-				message.addClass("alert-success");
-			}
-			else {
-				if (category == "other") add_category = true;
-				alert("Category added.");
-				$.ajax({
-					type: "POST",
-					url: "/~wegner/add_budget_post.php",
-					data: form_data,
-					success: function(result) {
-						if (result == "Budget added.") {
-							message.addClass("alert-success");
-						}
-						message.show().html(result);
+		if (amount == "undefined" || amount == "" || (!amount.match(/(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|0)?(\.[0-9]{1,2})?$/))) {
+			message.show().html("Fill the AMOUNT field correctly.");
+			message.addClass("alert-failure");
+		}	
+		else if (category == "undefined" || category == "") {
+			message.show().html("Fill the CATEGORY field correctly.");
+			message.addClass("alert-failure");
+		}			
+		else if (category == "other" && (new_category == "undefined" || new_category == "")) {
+			message.show().html("Fill the OTHER field correctly.");
+			message.addClass("alert-failure");
+		}
+		else {
+			//if (category == "other") add_category = true;
+			$.ajax({
+				type: "POST",
+				url: "/~wegner/add_budget_post.php",
+				data: form_data,
+				success: function(result) {
+					message.show().html(result);
+					if (result == "Budget added.") {
+						message.addClass("alert-success");
+						$("#add_budget_form input[name='amount']").val('');
+						//$("#add_budget_form select[name='category_id'] option:first").attr('selected','selected');
+						$("#add_budget_form input[name='new_category']").val('');
 					}
-				});
-			}
-		});
+				}
+			});
+		}
+	});
 
 	/* Create new wish */
 	$("#my_wish").click( function() {
@@ -96,7 +98,7 @@ $(document).ready( function() {
 			//CANCEL
 		}	
 	});
-});
+/*});
 		message.hide().removeClass("alert-success");
 		if (amount == "undefined" || amount == "") message.show().html("Fill the AMOUNT field correctly.");
 		else if (category == "undefined" || category == "") message.show().html("Fill the CATEGORY field correctly.");
@@ -115,7 +117,7 @@ $(document).ready( function() {
 			});
 		}
 		return false;
-	});
+	});*/
 	
 	/*	Ajax for login form	*/
 	$('#btn_login_form').click(function(){
@@ -141,5 +143,33 @@ $(document).ready( function() {
 			});
 		}
 		return false;
+	});
+	
+	/*	Ajax for delete budget home	*/
+	$('.btn_delete').click(function(){
+		var budget_id = $(this).prev('.budget_id').html();
+		alert(budget_id);
+		/*var form_data = $("#login_form").serialize(),
+			email = $("#login_form input[name='email']").val(),
+			password = $("#login_form input[name='password']").val(),
+			message = $("#login_form .alert");
+		message.hide().removeClass("alert-success");
+		if (email == "undefined" || email == "") message.show().html("Fill the EMAIL field correctly.");
+		else if (password == "undefined" || password == "") message.show().html("Fill the PASSWORD field correctly.");
+		else {
+			$.ajax({
+				type: "POST",
+				url: "/~wegner/login_post.php",
+				data: form_data,
+				success: function(result) {
+					if (result == "Logged in.") {
+						message.addClass("alert-success");
+						window.location.replace("/~wegner/index.php?file=home");
+					}
+					message.show().html(result);
+				}
+			});
+		}
+		return false;*/
 	});
 });

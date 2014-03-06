@@ -1,4 +1,8 @@
-<form class="form-horizontal" role="form" action="add_budget_post.php" id="add_budget_form">
+<?php
+
+include_once dirname(__FILE__) . '/config.php';
+
+?><form class="form-horizontal" role="form" action="add_budget_post.php" id="add_budget_form">
     <div class="form-group">
    	    <label for="amount" class="col-sm-2 control-label">Amount:</label>
    	    <div class="col-sm-10">
@@ -8,11 +12,28 @@
     <div class="form-group">
    	    <label for="category" class="col-sm-2 control-label">Category:</label>
         <div class="col-sm-10">
-            <select class="form-control" id="category" name="category">
-                <option value="clothing" selected="selected">Clothing</option>
-                <option value="food">Food</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="other">Other</option>
+            <select class="form-control" id="category" name="category_id"><?php
+				
+				// Get the user categories
+				$connection = new createConnection();
+				$connection->connectToDatabase();
+				
+				$sql = 'SELECT DISTINCT c.category_id,
+							   		    c.name
+						FROM ' . $connection->database . '.category c LEFT JOIN ' . $connection->database . '.budget b ON c.category_id = b.category_id
+						WHERE (b.user_id = ' . htmlentities($user_id) . ')
+							   OR (c.category_id = 1 OR
+							   	   c.category_id = 2 OR
+							   	   c.category_id = 3)
+						ORDER BY c.name ASC';
+				$categories = $connection->runSqlWithReturn($sql);
+
+				foreach ($categories as $k => $category)
+					echo '<option value="' . $category['category_id'] . '">' . ucfirst($category['name']) . '</option>';
+				
+				$connection->closeConnection();
+				
+				?><option value="other">Other</option>
             </select>
         </div>
     </div>
@@ -32,8 +53,3 @@
 
     <div class="alert my_alert"></div>
 </form>
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <div class="alert"></div>
-</form>
-
-<!--comment-->

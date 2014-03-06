@@ -32,16 +32,15 @@ class createConnection {
 		return mysql_query($sql, $this->myconn);
 	}
 	
-	/*function runSqlWithReturn($sql) {
-		// Run the SQL
-		$query = mysql_query($sql, $myconn);*/
-	// Run MySQL query with return of values from the database
 	function runSqlWithReturn($sql) {
 		// Run the SQL
 		$query = mysql_query($sql, $this->myconn);
 		
 		// Get the result from the database
-		return mysql_fetch_assoc($query);
+		while($row = mysql_fetch_assoc($query))
+			$result[] = $row;
+			
+		return $result;
 	}
 
     /*function selectDatabase() // selecting the database.

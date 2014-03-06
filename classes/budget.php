@@ -5,7 +5,6 @@ include_once dirname(__FILE__) . '/../config.php';
 // Create a class for get and manage form data
 class Budget {
     public $budget_id;
-    //public $user_id;
     public $category_id;
     public $amount;
 
@@ -38,10 +37,6 @@ class Budget {
 		$this->budget_id = $budget_id_form;
     }
 	
-    /*public function setUserId($user_id_form) {
-		$this->user_id = $user_id_form;
-    }*/
-	
     public function setCategoryId($category_id_form) {
 		$this->category_id = $category_id_form;
     }
@@ -56,18 +51,19 @@ class Budget {
 		$connection->connectToDatabase();
 		
 		// Insert the budget
-		$sql = 'INSERT INTO budget
 		$sql = 'INSERT INTO ' . $connection->database . '.budget
 				(category_id,
+				 user_id,
 				 amount)
 				VALUES
 				("' . htmlentities($this->category_id) . '",
+				 "' . htmlentities($_SESSION['user_id']) . '",
 				 "' . htmlentities($this->amount) . '")';
 		$return = $connection->runSql($sql);
 		// Close database connection
 		$connection->closeConnection();
 		
-		return $return . $sql;
+		return $return;
 	}
 	
 	public function editBudget() {
@@ -76,7 +72,7 @@ class Budget {
 		$connection->connectToDatabase();
 		
 		// Edit the budget
-		$sql = 'UPDATE budget SET
+		$sql = 'UPDATE ' . $connection->database . '.budget SET
 				category_id = "' . htmlentities($category_id) . '",
 				amount = "' . htmlentities($amount) . '"
 				category_id = "' . htmlentities($this->category_id) . '",
@@ -88,6 +84,36 @@ class Budget {
 		$connection->closeConnection();
 		
 		return $return;
+	}
+	
+	public function addCategory($name) {
+		// Connect to the database
+		$connection = new createConnection();
+		$connection->connectToDatabase();
+		
+		// Check if the category already exist
+		$sql = 'SELECT DISTINCT c.category_id
+				FROM ' . $connection->database . '.category AS c
+				WHERE ' . strtolower($name) . ' = LOWER(c.name)';
+		$category = $connection->runSqlWithReturn($sql);
+		
+		$new_category_id = 0;
+		foreach ($category as $k) $new_category_id = $k['category_id'];
+		$new_category_id;
+		
+		if ($new_category_id) {
+			// Insert the category in the DB
+			$sql = 'INSERT INTO ' . $connection->database . '.category
+					(name)
+					VALUES
+					("' . htmlentities(strtolower($name)) . '")';
+			if ($connection->runSql($sql)) $new_category_id = mysql_insert_id();
+		}
+		
+		// Close database connection
+		$connection->closeConnection();
+		
+		return $new_category_id;
 	}
 }
 
