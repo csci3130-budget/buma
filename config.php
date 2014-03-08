@@ -18,7 +18,7 @@ include_once dirname(__FILE__) . '/classes/login.php';
 $login = new Login;
 
 // Test if the user is logged
-if ($file != 'login')
+if ($file != 'login' && $file != 'register')
 	if ($logged = $login->userLogged()) {
 		$user_id = $_SESSION['user_id'];
 		$user_name = $_SESSION['user_name'];

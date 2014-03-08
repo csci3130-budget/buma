@@ -17,7 +17,8 @@ class createConnection {
 	// Create a function for connect database
     function connectToDatabase() {
 		// Try to connect
-        echo $conn = mysql_connect($this->host,$this->username,$this->password);
+        $conn = mysql_connect($this->host,$this->username,$this->password);
+
 		// Testing the connection
         if(!$conn) die ("Cannot connect to the database");
         else $this->myconn = $conn;

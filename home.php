@@ -11,7 +11,11 @@ $sql = 'SELECT b.budget_id,
 		WHERE b.user_id = ' . htmlentities($user_id) . '
 			   AND b.category_id = c.category_id
 		ORDER BY c.name ASC';
-		
+?>
+
+<p>HI EVERYONE!</p>
+
+<?php		
 $budgets = $connection->runSqlWithReturn($sql);
 if (count($budgets)) {
 	echo '<h4>Budget for this month: $500.00</h4>

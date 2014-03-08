@@ -92,16 +92,16 @@ class Budget {
 		$connection->connectToDatabase();
 		
 		// Check if the category already exist
-		$sql = 'SELECT DISTINCT c.category_id
+		echo $sql = 'SELECT DISTINCT c.category_id
 				FROM ' . $connection->database . '.category AS c
-				WHERE ' . strtolower($name) . ' = LOWER(c.name)';
+				WHERE "' . strtolower(htmlentities($name)) . '" = LOWER(c.name)';
 		$category = $connection->runSqlWithReturn($sql);
 		
 		$new_category_id = 0;
 		foreach ($category as $k) $new_category_id = $k['category_id'];
 		$new_category_id;
 		
-		if ($new_category_id) {
+		if (!$new_category_id) {
 			// Insert the category in the DB
 			$sql = 'INSERT INTO ' . $connection->database . '.category
 					(name)

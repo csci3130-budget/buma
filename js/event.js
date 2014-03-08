@@ -47,7 +47,7 @@ $(document).ready( function() {
 			//if (category == "other") add_category = true;
 			$.ajax({
 				type: "POST",
-				url: "/add_budget_post.php",
+				url: "/group11/buma/add_budget_post.php",
 				data: form_data,
 				success: function(result) {
 					message.show().html(result);
@@ -131,12 +131,12 @@ $(document).ready( function() {
 		else {
 			$.ajax({
 				type: "POST",
-				url: "/login_post.php",
+				url: "/group11/buma/login_post.php",
 				data: form_data,
 				success: function(result) {
 					if (result == "Logged in.") {
 						message.addClass("alert-success");
-						window.location.replace("/index.php?file=home");
+						window.location.replace("home");
 					}
 					message.show().html(result);
 				}
@@ -159,17 +159,72 @@ $(document).ready( function() {
 		else {
 			$.ajax({
 				type: "POST",
-				url: "/login_post.php",
+				url: "/group11/buma/login_post.php",
 				data: form_data,
 				success: function(result) {
 					if (result == "Logged in.") {
 						message.addClass("alert-success");
-						window.location.replace("/index.php?file=home");
+						window.location.replace("home");
 					}
 					message.show().html(result);
 				}
 			});
 		}
 		return false;*/
-	});
+		});
+
+
+/* Ajax for register form */
+	$('#register_form_buttom').click(function(){
+		var form_data =$("#register_form").serialize(),
+			email = $("#register_form input[name='email']").val(),
+			password = $("#register_form input[name='password']").val(),
+			username = $("#register_form input[name='username']").val(),
+			userid	 = $("#register_form input[name='user_id']").val(),
+		
+			message = $("#register_form .alert");
+			
+			$.ajax({
+				type: "POST",
+				url: "/group11/buma/register_post.php",
+				data: form_data,
+				success: function(result) {
+					if (result == "Register successfully.") {
+						$("#register_form input[name='email']").val('');				
+						$("#register_form input[name='password']").val('');
+						$("#register_form input[name='usrname']").val('');	
+						$("#register_form input[name='userid']").val('');	
+						message.addClass("alert-success");
+						window.location.replace("login");
+					}
+					message.show().html(result);
+				}
+			});
+		
+		return false;
+			});
+			
+	/*Ajax for forgot form*/		
+	/*$('#forget_form').click(function(){
+		var form_data =$("#forget_form").serialize(),
+			email = $("#forget_form input[name='email']").val(),
+			message.hide().removeClass("alert-success");
+		if (email == "undefined" || email == "") message.show().html("Fill the EMAIL field correctly.");
+		
+		else {
+			$.ajax({
+				type: "POST",
+				url: "/group11/buma/forget_post.php",
+				data: form_data,
+				success: function(result) {
+					if (result == "Message sended.") {
+						message.addClass("alert-success");
+					}
+					message.show().html(result);
+				}
+			});
+		}
+		return false;
+			});		*/
+			
 });
