@@ -1,17 +1,6 @@
 <?php
 include_once dirname(__FILE__) . '/../config.php';
-
-if(!isset($_POST['submit'])){
-	exit('Error! Please resubmit the form');
-}
-
-
-
-//set up email vaildation for email if the browser do not have vaildation
-$email = $_POST['email'];
-if(!preg_match('/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/', $email)){
-	exit('Error about email format<a href="javascript:history.back(-1);">return</a>');
-}
+include_once dirname(__FILE__) . '/classes/connection.php';
 
 //Set up variable that need to be register into datatbase.
 class register {
@@ -42,57 +31,44 @@ class register {
 /*$userid = $_POST['user_id'];
 $username = $_POST['username'];
 $password = $_POST['password'];
-$email = $_POST['email'];*/	
+$email = $_POST['email'];*/
+
+		
 	public function register() {
 		//connect to database
 		$connection = new createConnection();
 		$connection->connectToDatabase();
 	
-		//check if the username exist
-		$sql = 'SELECT user_id
+		//check if the email exist
+		$sql = 'SELECT email
 				FROM ' . $connection->database . '.user
-				WHERE email = "' . htmlentities($this->email) . '" AND
-					  name = "' . htmlentities($this->username) . '"
+				WHERE email = "' . htmlentities($this->email) . '"
 				LIMIT 1';
 		$user_data = $connection->runSqlWithReturn($sql);
 		
 		// If user exist
-		if ($user_data['user_id'])
-		{
-			echo 'Error£ºUser id ',$user_data['user_id'],' already exist! <a href="javascript:history.back(-1);">return</a>';
-			exit;
-		}
+		foreach ($user_data as $k)
+			if ($k['email']) {
+			    echo "Email already exist. Please use other email for your account!";
+				$connection->closeConnection();
+				}
 		//if(mysql_fetch_array($check_query)){}
-		
-		//insert the code
-		$this->password =MD5($this->password);
 		//$password = MD5($password);
-		
+		else {
 		$sql = 'INSERT INTO ' . $connection->database . '.user
-				(user_id,
-				 name,
+				(name,
 				 password,
 				 email)
 				 VALUES
-				 ("' . htmlentities($this->userid) . '",
-				  "' . htmlentities($this->username) . '",
+				 ("' . htmlentities($this->username) . '",
 				  "' . htmlentities($this->password) . '",
 				  "' . htmlentities($this->email) . '")';
-				 
-		if(mysql_query($sql,$connection->database))
-			{
-			exit('Register successfully! Cilck here to <a href="login.php">Login</a>');
-			} 
-			else 
-			{
-			echo 'Sorry,fail to register',mysql_error(),'<br />';
-			echo 'Cilck here to <a href="javascript:history.back(-1);">return</a>';
-			}
 		
 		$return = $connection->runSql($sql);
 		// Close database connection
 		$connection->closeConnection();
 		return $return . $sql;
+		}
 	}
    }
 ?>

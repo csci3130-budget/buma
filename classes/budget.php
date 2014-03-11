@@ -21,17 +21,47 @@ class Budget {
     public function getUserId() {
         print_r($this);
         return $this->user_id;
-    }
+    }*/
 
     public function getCategoryId() {
-        print_r($this);
-        return $this->category_id;
+		// Connect to the database
+		$connection = new createConnection();
+		$connection->connectToDatabase();
+		
+		/*	Get the category id using the budget id	*/
+		echo $sql = 'SELECT DISTINCT category_id
+				FROM ' . $connection->database . '.budget
+				WHERE "' . strtolower(htmlentities($this->budget_id)) . '" = budget_id';
+		$category_id_db = $connection->runSqlWithReturn($sql);
+
+		// Close database connection
+		$connection->closeConnection();
+		
+		$category_id = 0;
+		foreach ($category_id_db as $k) $category_id = $k['category_id'];
+		
+        return $category_id;
     }
 
     public function getAmount() {
-        print_r($this);
-        return $this->amount;
-    }*/
+        // Connect to the database
+		$connection = new createConnection();
+		$connection->connectToDatabase();
+		
+		/*	Get the amount using the budget id	*/
+		echo $sql = 'SELECT DISTINCT amount
+				FROM ' . $connection->database . '.budget
+				WHERE "' . strtolower(htmlentities($this->budget_id)) . '" = budget_id';
+		$amount_db = $connection->runSqlWithReturn($sql);
+
+		// Close database connection
+		$connection->closeConnection();
+		
+		$amount = 0;
+		foreach ($amount_db as $k) $amount = $k['amount'];
+		
+        return $amount;
+    }
 	
     public function setBudgetId($budget_id_form) {
 		$this->budget_id = $budget_id_form;
@@ -60,10 +90,27 @@ class Budget {
 				 "' . htmlentities($_SESSION['user_id']) . '",
 				 "' . htmlentities($this->amount) . '")';
 		$return = $connection->runSql($sql);
+		
 		// Close database connection
 		$connection->closeConnection();
 		
 		return $return;
+	}
+	
+	public function deleteBudget() {
+		// Connect to the database
+		$connection = new createConnection();
+		$connection->connectToDatabase();
+		
+		// Edit the budget
+		$sql = 'DELETE FROM ' . $connection->database . '.budget
+				WHERE budget_id = "' . htmlentities($this->budget_id) . '"';
+		
+		$return = $connection->runSql($sql);
+		// Close database connection
+		$connection->closeConnection();
+		
+		return $sql;
 	}
 	
 	public function editBudget() {
