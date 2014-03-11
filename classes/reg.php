@@ -45,30 +45,30 @@ $email = $_POST['email'];*/
 				WHERE email = "' . htmlentities($this->email) . '"
 				LIMIT 1';
 		$user_data = $connection->runSqlWithReturn($sql);
-		
 		// If user exist
-		foreach ($user_data as $k)
+		foreach ($user_data as $k){
 			if ($k['email']) {
 			    echo "Email already exist. Please use other email for your account!";
 				$connection->closeConnection();
 				}
+		}
 		//if(mysql_fetch_array($check_query)){}
 		//$password = MD5($password);
-		else {
-		$sql = 'INSERT INTO ' . $connection->database . '.user
-				(name,
-				 password,
-				 email)
-				 VALUES
-				 ("' . htmlentities($this->username) . '",
-				  "' . htmlentities($this->password) . '",
-				  "' . htmlentities($this->email) . '")';
-		
-		$return = $connection->runSql($sql);
-		// Close database connection
-		$connection->closeConnection();
-		return $return . $sql;
+		if($user_data == ""){
+			$sql = 'INSERT INTO ' . $connection->database . '.user
+					(name,
+					 password,
+					 email)
+					 VALUES
+					 ("' . utf8_encode(htmlentities($this->username, ENT_QUOTES, "UTF-8")) . '",
+					  "' . htmlentities($this->password) . '",
+					  "' . htmlentities($this->email) . '")';
+			
+			$return = $connection->runSql($sql);
+			// Close database connection
+			$connection->closeConnection();
+			return $return . $sql;
 		}
-	}
-   }
+	}	
+}   
 ?>
