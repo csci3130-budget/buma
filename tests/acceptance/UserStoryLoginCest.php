@@ -1,5 +1,5 @@
 <?php
-use \WebGuy;
+use \WebGuy
 
 class UserStoryLoginCest
 {
@@ -48,11 +48,44 @@ class UserStoryLoginCest
 
 				// Login with wrong password
 				public function incorrectPassword($I) {
+								
+								$I->wantTo('Fail to log in with wrong password');
+								
+								//Should default to centi.cs.dal.ca/group11/buma
+								$I->amOnPage('');
+						
+								//We already have an account created with this username
+						                $I->fillField('emal','test');
+								//Enter the wrong password to fail the login
+								$I->fillField('password','1234');
+
+								//The log in should be failed
+								//User should stay in the login page and see the error message
+								$I->sendAjaxGetRequest('/refrest');
+								$I->see('Log in');
+								$I->see('Email or password incorrect');
 
 				}
 
 				// Login with wrong username
 				public function incorrectUsername($I) {
+								
+								$I->wantTo('Fail to log in with the wrong username');
+							
+								//Should default to centi.cs.dal.ca/group11/buma
+								$I->amOnPage('');
+
+								//Enter the wrong username
+								$I->fillField('email','1234');
+								//We have already have an account created with this password
+								$I->fillField('password','test');
+
+
+								//The log in should be failed
+								//User should stay in the login page and see the error messaget
+								$I->sendAjaxGetRequest('/refresh');
+								$I->see("Log in");
+								$I->see('Email or password incorrect');
 
 				}
 
@@ -76,5 +109,5 @@ class UserStoryLoginCest
 								$I->sendAjaxGetRequest('home');
 								$I->dontSee('Log in');
 								$I->click('Logout');
-				}
+			}
 }

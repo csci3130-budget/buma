@@ -24,4 +24,7 @@ class UserStoryRemoveWishCest
 				// Will see 'Wish removed' if test has passed'
 				$I->see('Wish removed');
 		}
+
+		// TODO
+		// Show wish removed in database
 }

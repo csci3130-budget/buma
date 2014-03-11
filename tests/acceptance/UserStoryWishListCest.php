@@ -16,11 +16,15 @@ class UserStoryWishListCest
 
 		}
 
-		// View all wishes
+		// View all wishes ** NEEDS TO BE COMPLETED
 		public function viewWishes($I) {
 				$I->wantTo('View all wishes on list');
 				$I->amOnPage('/index.php?file=wish_list');
 
 				$I->see('Wish');
 		}
+
+		// TESTS TO COMPLETE:
+		// Show amount saved
+		
 }

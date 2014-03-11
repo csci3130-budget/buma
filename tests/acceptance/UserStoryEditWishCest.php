@@ -27,4 +27,8 @@ class UserStoryEditWishCest
 				// Will see 'Information updated' if test has passed
 				$I->see('Information updated');
 		}
+
+		// TODO:
+		// Error message if item has already been added to wishlist
+		// Value error
 }

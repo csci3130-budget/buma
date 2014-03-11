@@ -35,4 +35,10 @@ class UserStoryCompleteWishCest
 				// Will see the below text if test has passed
 				$I->see('Sorry, you have not saved enough money yet.');
 		}
+
+		// Tests to complete:
+		// Show wish has been removed from database
+		// Show wish has been removed on screen
+		// Saved amount changed in database
+		// Saved amount changed onscreen
 }

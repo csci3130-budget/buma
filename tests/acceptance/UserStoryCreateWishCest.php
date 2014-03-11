@@ -17,7 +17,7 @@ class UserStoryCreateWishCest
 		
 		}
 		
-		// New wish - error in item added
+		// New wish - error in item added ***NEED TO FINISH
 		public function itemError($I) {
 				$I->wantTo('Error check - new wish added');
 				$I->amOnPage('/index.php?file=wish_list');
@@ -56,4 +56,9 @@ class UserStoryCreateWishCest
 				// Will see below text if test has passed
 				$I->see('Item cost is not valid - please enter your price as an integer (ex: 100)');
 		}
+
+		// TESTS TO COMPLETE:
+		// Item error (item already in wish list)
+		// Success message if item added to wishlist
+		// Show item added in database
 }
