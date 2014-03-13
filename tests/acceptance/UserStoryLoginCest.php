@@ -21,13 +21,6 @@ class UserStoryLoginCest
 
 				// Login with valid information
 				public function validInformation($I) {
-				// tests
-				/*public function tryToTest(WebGuy $I) {
-								$this->validInformation($I);
-								$this->welcome($I);
-								$this->logoutSuccess($I);
-				}*/
-
 								$I->wantTo('Login with a correct username and password');
 
 								// Should default to centi.cs.dal.ca/group11/buma

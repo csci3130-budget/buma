@@ -4,57 +4,73 @@ use \WebGuy;
 class UserStoryCreateAccountCest
 {
 
-    public function _before()
-    {
-    }
+				public function _before()
+				{
+				}
 
-    public function _after()
-    {
-    }
+				public function _after()
+				{
+				}
 
-		public function invalidPassword($I) {
-							$I->amOnPage('');
-							//Click the Create New Account on the log in page to creat a new account in BUMA
-							$I->click('Create New Account');
-							//A new web page should appeared, user can see the register buttoun on that page 
-							$I->sendAjaxGetRequest('/refresh');
-							$I->see('Register');
-							
-							//Enter the inforamtion
-							//For this test, we need to enter an invalid password to fail the registeration
-							$I->fillField('email','test1');
-							$I->fillField('name','test1');
-							$I->fillField('password','');
-							$I->fillField('repass','');
+				public function invalidPassword($I) {
+								$I->amOnPage('');
+								//Click the Create New Account on the log in page to creat a new account in BUMA
+								$I->click('Create New Account');
+								//A new web page should appeared, user can see the register buttoun on that page 
+								$I->sendAjaxGetRequest('/refresh');
+								$I->see('Register');
 
-							//The user can not create the account with an invalid password
-							//and stay in the create new account page and see an error message
-							$I->see('Register');
-							$I->see('Invalid email or password');
-		}
+								//Enter the inforamtion
+								//For this test, we need to enter an invalid password to fail the registeration
+								$I->fillField('email','test1');
+								$I->fillField('name','test1');
+								$I->fillField('password','');
+								$I->fillField('repass','');
 
-		public function invalidUsername($I) {
+								//The user can not create the account with an invalid password
+								//and stay in the create new account page and see an error message
+								$I->see('Register');
+								$I->see('Invalid email or password');
+				}
 
-                                                        $I->amOnPage('');
-                                                        //Click the Create New Account on the log in page to creat a new account in BUMA
-                                                        $I->click('Create New Account');
-                                                        //A new web page should appeared, user can see the register buttoun on that page
-                                                        $I->sendAjaxGetRequest('/refresh');
-                                                        $I->see('Register');
+				public function invalidUsername($I) {
+								$I->amOnPage('');
+								//Click the Create New Account on the log in page to creat a new account in BUMA
+								$I->click('Create New Account');
+								//A new web page should appeared, user can see the register buttoun on that page
+								$I->sendAjaxGetRequest('/refresh');
+								$I->see('Register');
 
-                                                        //Enter the inforamtion
-                                                        //For this test, we need to enter an invalid username to fail the registeration
-                                                        $I->fillField('email','');
-                                                        $I->fillField('name','');
-                                                        $I->fillField('password','test1');
-                                                        $I->fillField('repass','test1');
+								//Enter the inforamtion
+								//For this test, we need to enter an invalid username to fail the registeration
+								$I->fillField('email','');
+								$I->fillField('name','');
+								$I->fillField('password','test1');
+								$I->fillField('repass','test1');
 
-                                                        //The user can not create the account with an invalid password
-                                                        //and stay in the create new account page and see an error message
-                                                        $I->see('Register');
-                                                        $I->see('Invalid email or password');
-					       	} 
+								//The user can not create the account with an invalid password
+								//and stay in the create new account page and see an error message
+								$I->see('Register');
+								$I->see('Invalid email or password');
+				} 
 
-	       public function validInformation($I) {
-					}
+				public function validInformation($I) {
+								$I->amOnPage('');
+								//Click the Create New Account on the log in page to create a new account in BUMA
+								$I->click('Create New Account');
+
+								//A new web page should appeared, user can see the register buttoun on that page
+								$I->sendAjaxGetRequest('/refresh');
+								$I->see('Register');
+
+								//Enter the inforamtion
+								//For this test, we need to enter an valid username to fail the registeration
+								$I->fillField('email','e2214858@drdrb.com');
+								$I->fillField('name','Thisis Atest');
+								$I->fillField('password','Testing-123');
+								$I->fillField('repass','Testing-123');
+
+								// If test passes, user should see the below text, along with their username
+								$I->see('Thisis Atest, welcome to BUMA!');
+				}
 }

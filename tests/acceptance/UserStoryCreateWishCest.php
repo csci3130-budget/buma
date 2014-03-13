@@ -56,9 +56,37 @@ class UserStoryCreateWishCest
 				// Will see below text if test has passed
 				$I->see('Item cost is not valid - please enter your price as an integer (ex: 100)');
 		}
-
-		// TESTS TO COMPLETE:
-		// Item error (item already in wish list)
+		
+		//Item error (item already in wish list)
+		public function duplicateError($I) {
+				$I->wantTo('Error check - duplicate wishes')
+				$I->amOnPage('/index.php?file=wish_list');
+				
+				//Look for Iteam, and Value
+				$I->see('Item');
+				$I->see('Value');
+				
+				//Fill in fields with rest items
+				$I->fillField('Item', 'test item');
+				$I->fillField('Value', '100');
+				
+				//Update
+				$I->click('Add');
+				
+				//Confirm item was added.
+				$I->see('Item added to wish list!');
+				
+				//Fill in fields with duplicate item
+				$I->fillField('Item', 'test item');
+				$I->fillField('Value', '100');
+				
+				//Update
+				$I->click('Add');
+				
+				//Make sure error message appeared.
+				$I->see('Duplicate item, wish rejected.');
+		}
+		// TESTS TO COMPLETE
 		// Success message if item added to wishlist
 		// Show item added in database
-}
+}  
