@@ -29,7 +29,7 @@ class Budget {
 		$connection->connectToDatabase();
 		
 		/*	Get the category id using the budget id	*/
-		echo $sql = 'SELECT DISTINCT category_id
+		$sql = 'SELECT DISTINCT category_id
 				FROM ' . $connection->database . '.budget
 				WHERE "' . strtolower(htmlentities($this->budget_id)) . '" = budget_id';
 		$category_id_db = $connection->runSqlWithReturn($sql);
@@ -49,7 +49,7 @@ class Budget {
 		$connection->connectToDatabase();
 		
 		/*	Get the amount using the budget id	*/
-		echo $sql = 'SELECT DISTINCT amount
+		$sql = 'SELECT DISTINCT amount
 				FROM ' . $connection->database . '.budget
 				WHERE "' . strtolower(htmlentities($this->budget_id)) . '" = budget_id';
 		$amount_db = $connection->runSqlWithReturn($sql);
@@ -120,13 +120,12 @@ class Budget {
 		
 		// Edit the budget
 		$sql = 'UPDATE ' . $connection->database . '.budget SET
-				category_id = "' . htmlentities($category_id) . '",
-				amount = "' . htmlentities($amount) . '"
 				category_id = "' . htmlentities($this->category_id) . '",
 				amount = "' . htmlentities($this->amount) . '"
-				WHERE budget_id = "' . htmlentities($budget_id) . '"';
+				WHERE budget_id = "' . htmlentities($this->budget_id) . '"';
 		
 		$return = $connection->runSql($sql);
+		
 		// Close database connection
 		$connection->closeConnection();
 		
@@ -139,7 +138,7 @@ class Budget {
 		$connection->connectToDatabase();
 		
 		// Check if the category already exist
-		echo $sql = 'SELECT DISTINCT c.category_id
+		$sql = 'SELECT DISTINCT c.category_id
 				FROM ' . $connection->database . '.category AS c
 				WHERE "' . strtolower(htmlentities($name)) . '" = LOWER(c.name)';
 		$category = $connection->runSqlWithReturn($sql);

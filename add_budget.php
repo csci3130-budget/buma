@@ -1,12 +1,20 @@
 <?php
 
 include_once dirname(__FILE__) . '/config.php';
+include_once dirname(__FILE__) . '/classes/budget.php';
+
+$id = isset($p['id']) ? $p['id'] : (isset($g['id']) ? $g['id'] : '0');
+$budget = new Budget;
+$budget->setBudgetId($id);
+$category_id = $budget->getCategoryId();
+$amount = $budget->getAmount();
 
 ?><form class="form-horizontal" role="form" action="add_budget_post.php" id="add_budget_form">
     <div class="form-group">
+    	<input type="hidden" name="budget_id" value="<?php echo $id; ?>">
    	    <label for="amount" class="col-sm-2 control-label">Amount:</label>
    	    <div class="col-sm-10">
-      		<input type="text" class="form-control" name="amount" placeholder="Amount">
+      		<input type="text" class="form-control" name="amount" placeholder="Amount" value="<?php echo (strlen($amount) && ($amount > 0) ? $amount : ''); ?>">
     	</div>
     </div>	
     <div class="form-group">
@@ -29,7 +37,7 @@ include_once dirname(__FILE__) . '/config.php';
 				$categories = $connection->runSqlWithReturn($sql);
 
 				foreach ($categories as $k => $category)
-					echo '<option value="' . $category['category_id'] . '">' . ucfirst($category['name']) . '</option>';
+					echo '<option ' . (strlen($category_id) && $category_id == $category['category_id'] ? 'selected="selected"' : '') . ' value="' . $category['category_id'] . '">' . utf8_encode(ucfirst($category['name'])) . '</option>';
 				
 				$connection->closeConnection();
 				
