@@ -55,12 +55,12 @@ $email = $_POST['email'];*/
 		//if(mysql_fetch_array($check_query)){}
 		//$password = MD5($password);
 		if($user_data == ""){
-			$sql = 'INSERT INTO ' . $connection->database . '.user
+			echo $sql = 'INSERT INTO ' . $connection->database . '.user
 					(name,
 					 password,
 					 email)
 					 VALUES
-					 ("' . utf8_encode(htmlentities($this->username, ENT_QUOTES, "UTF-8")) . '",
+					 ("' . htmlentities($this->username) . '",
 					  "' . htmlentities($this->password) . '",
 					  "' . htmlentities($this->email) . '")';
 			
