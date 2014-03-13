@@ -63,42 +63,38 @@ $(document).ready( function() {
 		}
 	});
 
+	/* Edit wish */
+	$(".edit").click( function() {
+		$("#edit-wish").show();
+		$(".remove-wish").hide();
+		$(".complete-wish").hide();
+		$("#new_wish").hide();
+	});	
+	
+	/* Remove wish */
+	$(".remove").click( function() {
+		$(".remove-wish").show();
+		$(".complete-wish").hide();
+		$("#edit-wish").hide();
+		$("#new_wish").hide();
+	});	
+	
+	/* Complete wish */
+	$(".complete").click( function() {
+		$(".complete-wish").show();
+		$(".remove-wish").hide();
+		$("#edit-wish").hide();
+		$("#new_wish").hide();
+	});	
+	
 	/* Create new wish */
 	$("#my_wish").click( function() {
 		$("#new_wish").show();
+		$(".remove-wish").hide();
+		$("#edit-wish").hide();
+		$(".complete-wish").hide();
 	});		
 
-	$(".remove").click( function() {
-		var text;
-		var edit = confirm("Are you sure you want to remove this wish?");	
-		if (edit === true) {
-			//REMOVE
-		} else {
-			//CANCEL
-		}	
-	});
-
-
-	$(".edit").click( function() {
-		var text;
-		var edit = confirm("Are you sure you want to remove this wish?");	
-		if (edit === true) {
-			//REMOVE
-		} else {
-			//CANCEL
-		}	
-	});
-
-
-	$(".complete").click( function() {
-		var text;
-		var edit = confirm("Are you sure you want to remove this wish?");	
-		if (edit === true) {
-			//REMOVE
-		} else {
-			//CANCEL
-		}	
-	});
 /*});
 		message.hide().removeClass("alert-success");
 		if (amount == "undefined" || amount == "") message.show().html("Fill the AMOUNT field correctly.");
