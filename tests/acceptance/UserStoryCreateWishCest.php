@@ -59,7 +59,7 @@ class UserStoryCreateWishCest
 		
 		//Item addition error (item already in wish list)
 		public function duplicateError($I) {
-				$I->wantTo('Error check - duplicate wishes')
+				$I->wantTo('Error check - duplicate wishes');
 				$I->amOnPage('/index.php?file=wish_list');
 				
 				//Look for Iteam, and Value

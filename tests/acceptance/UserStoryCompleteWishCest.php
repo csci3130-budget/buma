@@ -51,7 +51,7 @@ class UserStoryCompleteWishCest
 				$I->see('Playstation');
 				$I->click(''); //Click X button to remove item
 				$I->click('Ok');//Confirm removal 
-				$I->dontsee('Playstation')//Confirm item has been removed
+				$I->dontsee('Playstation');//Confirm item has been removed
  		}
 		
 		//incomplete 
@@ -64,8 +64,4 @@ class UserStoryCompleteWishCest
 				//Should changed saved value
 				//Check Saved value for appropriate changes. 
 		}
-		
-		// Tests to complete:
-		// Show wish has been removed from database
-		// Saved amount changed in database
-		// Saved amount changed onscreen -- in progress
+}	

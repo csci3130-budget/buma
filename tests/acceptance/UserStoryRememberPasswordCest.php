@@ -15,14 +15,14 @@ class UserStoryRememberPasswordCest
 		/* A test to check that when the remember me checkbox is selected, 
 		 * the username and password should be remembered
 		 */
-		public function rememberMePass {
+		public function rememberMePass ($I) {
 
 		}
 
 		/* A test to check that when the remember me checkbox is not selected, 
 		 * the username and password should NOT be remembered
 		 */
-		public function rememberMeFail {
+		public function rememberMeFail ($I) {
 
 		}
 }

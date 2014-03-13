@@ -1,5 +1,5 @@
 <?php
-use \WebGuy
+use \WebGuy;
 
 class UserStoryLoginCest
 {

@@ -33,6 +33,18 @@ body {
 #nav {
 }
 
+.remove-wish {
+	display: none;
+}	
+
+#edit-wish {
+	display: none;
+}	
+
+.complete-wish {
+	display: none;
+}	
+
 .my_alert {
 	display: none;
 }	
