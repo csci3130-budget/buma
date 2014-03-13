@@ -64,6 +64,10 @@ body {
 	display: block;
 }
 
+.budget_id {
+	display: none;
+}
+
 #new_wish {
 	display: none;
 }

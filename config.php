@@ -18,9 +18,13 @@ include_once dirname(__FILE__) . '/classes/login.php';
 $login = new Login;
 
 // Test if the user is logged
-if ($file != 'login' && $file != 'register')
-	if ($logged = $login->userLogged()) {
-		$user_id = $_SESSION['user_id'];
-		$user_name = $_SESSION['user_name'];
-	}
+if (!in_array($file, array('login', 'register', 'forgot')) && $logged = $login->userLogged()) {
+	//echo 1;
+	$user_id = $_SESSION['user_id'];
+	$user_name = $_SESSION['user_name'];
+} else if ($file == "login" && ($login->userLoggedNoReturn())) {
+	//echo 2;
+	//header("Location: home");
+}
+
 ?>
