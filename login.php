@@ -1,9 +1,11 @@
 <div id="login" class="visible widget-box no-border">
 	<form class="form-signin" role="form"  id="login_form">
         <h2 class="form-signin-heading">Welcome to BUBA</h2>
-        <input name="email" type="text" class="form-control" placeholder="Email address" required autofocus>
-        <input name="password" type="password" class="form-control" placeholder="Password" required>
-        <label class="checkbox checkbox-control"><input type="checkbox" value="remember-me"> Remember me</label>
+        <input name="email" type="text" class="form-control" placeholder="Email address" required autofocus value="<?php
+		echo $_COOKIE['email']; ?>">
+        <input name="password" type="password" class="form-control" placeholder="Password" required value="<?php
+		echo $_COOKIE['password']; ?>">
+        <label class="checkbox checkbox-control"><input name="remember_me" type="checkbox" value="remember-me" <?php echo (isset($_COOKIE['email']) && isset($_COOKIE['password']) ? "checked='checked'" : ""); ?>> Remember me</label>
     
 	    <a href="forgot"><button type="button" class="btn btn-link forgot-control">Forgot Password</button></a>
    

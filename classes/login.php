@@ -48,12 +48,18 @@ class Login {
 	public function userLogged() {
 		if (!isset($_SESSION['user_id'])) {
 			$this->logOutUser();
+			return false;
 		} else {
 			$this->setEmail($_SESSION['email']);
 			$this->setPassword($_SESSION['password']);
 			/*if (!$this->userLogged()) $this->logOutUser();*/
 		}
 		return true;
+	}
+	
+	public function userLoggedNoReturn() {
+		if (isset($_SESSION['user_id'])) return true;
+		return false;
 	}
 	
 	public function logOutUser() {
