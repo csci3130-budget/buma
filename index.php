@@ -43,12 +43,12 @@ include_once dirname(__FILE__) . '/config.php';
                         
                         // Test if the user is logged
                         if ($user_id)
-                            echo '<li><p class="navbar-text">Logged in as ' . utf8_encode(ucfirst($_SESSION['user_name'])) . '</p></li>
+                            echo '<li><p class="navbar-text"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Logged in as ' . utf8_encode(ucfirst($_SESSION['user_name'])) . '</p></li>
                                   <li><a href="/group11/buma/add_budget"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Budget</a></li> <!--#Add-->
                                   <li><a href="/group11/buma/add_expense"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Add New Expense</a></li> <!--#Add-->
                                   <li><a href="/group11/buma/wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
                                   <li><a href="/group11/buma/statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
-                                  <li><a href="/group11/buma/logout"><span class="glyphicon glyphicon-logout"></span>&nbsp;&nbsp;Logout</a></li> <!--#Logout-->';
+                                  <li><a href="/group11/buma/logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Logout</a></li> <!--#Logout-->';
                     ?></ul>
                 </div>
             </div>

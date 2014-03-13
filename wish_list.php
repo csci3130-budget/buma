@@ -4,12 +4,12 @@
 	<div class="progress progress-striped active">
 		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width: 80%;"></div>
 	</div>
-	<button id="nowrap" class="edit btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button><span class="btn-space"></span><button class="complete btn btn-default"><span class="glyphicon glyphicon-ok"></span></button><span class="btn-space"><button class="remove btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br /><br />
+	<button id="nowrap" class="edit btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button><span class="btn-space"></span><button class="complete btn btn-default"><span class="glyphicon glyphicon-ok"></span></button><span class="btn-space"><button class="remove btn btn-default"><span class="glyphicon glyphicon-trash"></span></button><br /><br />
 
 	<div class="align-bar"><h5 class="wish_text">TV</h5><h5 class="wish_text">$100.00</h5></div>
 	<div class="progress progress-striped active">
 		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width: 8%;"></div></div>
-	<button id="nowrap" class="edit btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button><span class="btn-space"></span><button class="complete btn btn-default"><span class="glyphicon glyphicon-ok"></span></button><span class="btn-space"><button class="remove btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>
+	<button id="nowrap" class="edit btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button><span class="btn-space"></span><button class="complete btn btn-default"><span class="glyphicon glyphicon-ok"></span></button><span class="btn-space"><button class="remove btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
 	</div>
 	<h5 class="saved-text">Saved: $80.00</h5>
 

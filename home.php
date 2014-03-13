@@ -50,7 +50,7 @@ if (count($budgets)) {
 					<span class="btn-space"></span>
 					<span class="budget_id">' . $budget['budget_id'] . '</span>
 					<button class="btn btn-default btn_delete">
-						<span class="glyphicon glyphicon-remove"></span>
+						<span class="glyphicon glyphicon-trash"></span>
 					</button>
 				</td>
 			  </tr>';
