@@ -273,22 +273,21 @@ $(document).ready( function() {
 		var form_data =$("#forgot_form").serialize(),
 			email = $("#forgot_form input[name='email']").val(),
 			message = $("#forgot_form .alert");
-		
-		message.hide().removeClass("alert-success");
-		if (email == "undefined" || email == "") message.show().html("Fill the EMAIL field correctly.");
-		else {
-			$.ajax({
+ 			message.hide().removeClass("alert-success");
+		if (email == "undefined" || email == "") message.show().html("Fill the EMAIL field correctly.")
+		else { 
+			$.ajax({ 
 				type: "POST",
 				url: "/group11/buma/forgot_post.php",
 				data: form_data,
 				success: function(result) {
-					if (result == "Message sended.") {
+					if (result == "Retrieve your password in your email") { 
 						message.addClass("alert-success");
 					}
 					message.show().html(result);
 				}
 			});
-		}
+		} 
 		return false;
 			});		
 });
