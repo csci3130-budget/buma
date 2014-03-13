@@ -53,8 +53,19 @@ class UserStoryCompleteWishCest
 				$I->click('Ok');//Confirm removal 
 				$I->dontsee('Playstation')//Confirm item has been removed
  		}
-
+		
+		//incomplete 
+		public function completeAmountChanged($I) {
+				$I->wantTo('Check if the saved value is updated');
+				$I->amOnpage('/index.php?file=wish_list');
+   				
+				$I->see('Saved: '); 
+				//Amount is added to savings ....
+				//Should changed saved value
+				//Check Saved value for appropriate changes. 
+		}
+		
 		// Tests to complete:
 		// Show wish has been removed from database
 		// Saved amount changed in database
-		// Saved amount changed onscreen
+		// Saved amount changed onscreen -- in progress

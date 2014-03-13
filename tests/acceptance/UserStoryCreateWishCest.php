@@ -57,7 +57,7 @@ class UserStoryCreateWishCest
 				$I->see('Item cost is not valid - please enter your price as an integer (ex: 100)');
 		}
 		
-		//Item error (item already in wish list)
+		//Item addition error (item already in wish list)
 		public function duplicateError($I) {
 				$I->wantTo('Error check - duplicate wishes')
 				$I->amOnPage('/index.php?file=wish_list');
