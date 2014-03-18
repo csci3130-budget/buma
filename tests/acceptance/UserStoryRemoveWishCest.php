@@ -15,7 +15,7 @@ class UserStoryRemoveWishCest
 		// Delete wish
 		public function removeWish($I) {
 				$I->wantTo('Remove wish');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				// Update
 				$I->click('delete');

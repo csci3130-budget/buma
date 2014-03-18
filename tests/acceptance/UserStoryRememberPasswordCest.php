@@ -16,13 +16,21 @@ class UserStoryRememberPasswordCest
 		 * the username and password should be remembered
 		 */
 		public function rememberMePass ($I) {
-
+			$I->amOnPage('login');
+			$I->click('Remember Me');
+			
+				// Fill in info
+				// Logout
+				// See results
 		}
 
 		/* A test to check that when the remember me checkbox is not selected, 
 		 * the username and password should NOT be remembered
 		 */
 		public function rememberMeFail ($I) {
-
+			$I->amOnPage('login');
+				// Fill in info
+				// Logout
+				// See results
 		}
 }

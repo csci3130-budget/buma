@@ -15,10 +15,11 @@ class UserStoryForgotPasswordCest
 		public function invalidEmail($I) {
 							$I->wantTo('Fail to find the password with an invalid Email address');
 							//Should be default to centi.cs.dal.ca/group11/buma
-							$I->amOnPage('');
+							$I->amOnPage('login');
 							
 							//Click the Forget Password on the log in page
 							$I->click('Forget Password');
+							$I->amOnPage('forgot');
 							//After the user click the button, there should be place for them to enter the username(email)
 							$I->fillField('email','1234');
 							//Click the button to confirm the username
@@ -35,10 +36,11 @@ class UserStoryForgotPasswordCest
 		public function validEmail($I) {
 							$I->wantTo('Find the password using a valid Email(username)');
 							//Should be default to centi.cs.dal.ca/group11/bume
-							$I->amOnPaget('');
+							$I->amOnPage('login');
 				
 						//Click the Forget Password on the log in page
 							$I->click('Forget Password');
+							$I->amOnPage('forgot');
 							//After the user click the button, there should be a place for them to enter the username(email)
 							$I->fillField('email','test');
 							//Click the buttone to cofirm the username

@@ -20,7 +20,7 @@ class UserStoryCreateWishCest
 		// New wish - error in item added ***NEED TO FINISH
 		public function itemError($I) {
 				$I->wantTo('Error check - new wish added');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				// Looks for Item and Cost categories
 				$I->see('Item');

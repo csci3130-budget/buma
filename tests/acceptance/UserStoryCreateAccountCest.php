@@ -13,11 +13,12 @@ class UserStoryCreateAccountCest
 				}
 
 				public function invalidPassword($I) {
-								$I->amOnPage('');
+								$I->amOnPage('login');
 								//Click the Create New Account on the log in page to creat a new account in BUMA
 								$I->click('Create New Account');
 								//A new web page should appeared, user can see the register buttoun on that page 
 								$I->sendAjaxGetRequest('/refresh');
+								$I->amOnPage('register');
 								$I->see('Register');
 
 								//Enter the inforamtion
@@ -34,11 +35,12 @@ class UserStoryCreateAccountCest
 				}
 
 				public function invalidUsername($I) {
-								$I->amOnPage('');
+								$I->amOnPage('login');
 								//Click the Create New Account on the log in page to creat a new account in BUMA
 								$I->click('Create New Account');
 								//A new web page should appeared, user can see the register buttoun on that page
 								$I->sendAjaxGetRequest('/refresh');
+								$I->amOnPage('register');
 								$I->see('Register');
 
 								//Enter the inforamtion
@@ -55,12 +57,13 @@ class UserStoryCreateAccountCest
 				} 
 
 				public function validInformation($I) {
-								$I->amOnPage('');
+								$I->amOnPage('login');
 								//Click the Create New Account on the log in page to create a new account in BUMA
 								$I->click('Create New Account');
 
 								//A new web page should appeared, user can see the register buttoun on that page
 								$I->sendAjaxGetRequest('/refresh');
+								$I->amOnPage('register');
 								$I->see('Register');
 
 								//Enter the inforamtion

@@ -15,7 +15,7 @@ class UserStoryLoginCest
 				// Check if user can see login page
 				public function welcome($I) {
 								$I->wantTo('ensure that frontpage works');
-								$I->amOnPage('login/');
+								$I->amOnPage('login');
 								$I->see('Welcome');
 				}
 
@@ -24,7 +24,7 @@ class UserStoryLoginCest
 								$I->wantTo('Login with a correct username and password');
 
 								// Should default to centi.cs.dal.ca/group11/buma
-								$I->amOnPage('');
+								$I->amOnPage('login');
 
 								// We already have an account created with this username and password
 								// So we expected this test to pass
@@ -45,7 +45,7 @@ class UserStoryLoginCest
 								$I->wantTo('Fail to log in with wrong password');
 								
 								//Should default to centi.cs.dal.ca/group11/buma
-								$I->amOnPage('');
+								$I->amOnPage('login');
 						
 								//We already have an account created with this username
 						                $I->fillField('emal','test');

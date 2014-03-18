@@ -14,7 +14,7 @@ class UserStoryAddBudgetCest
 
 		public function addCategory($I) {
 				$I->wantTo('Add a new budget');
-				$I->amOnPage('/index.php?file=add_budget');
+				$I->amOnPage('add_budget');
 
 				// Looks for Amount and Category labels
 				$I->see('Amount');

@@ -15,7 +15,7 @@ class UserStoryWishListCest
 		// View all wishes ** NEEDS TO BE COMPLETED
 		public function viewWishes($I) {
 				$I->wantTo('View all wishes on list');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				$I->see('Wish');
 		}
@@ -23,7 +23,7 @@ class UserStoryWishListCest
 		// Show amount saved
 		public function showAmountSaved($I) {
 				$I->wantTo('Show amount saved on screen');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				// If test passes, we should see "Saved:"
 				$I->see('Saved:');

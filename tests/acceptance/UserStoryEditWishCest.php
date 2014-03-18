@@ -15,7 +15,7 @@ class UserStoryEditWishCest
 		// Edit wish - user is successful
 		public function editWishSuccessful($I) {
 				$I->wantTo('Edit a wish to change item in wish or amount the item costs');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				// Update
 				$I->click('edit');
