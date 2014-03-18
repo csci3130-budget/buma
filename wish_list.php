@@ -38,6 +38,8 @@
 	</div>
 
 	<!-- EDIT WISH FORM -->
+<br />
+				<br />
 	<div id="edit-wish">
 	<h2 class="page-title">Edit wish</h2>
 	<div class="form-group">
@@ -50,6 +52,8 @@
       		<input type="text" class="form-control" id="inputValue" placeholder="Value">
     	</div>
     </div>
+				<br />
+				<br />
     <div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10 wish-btn">    	
 			<button class="btn btn-success " type="submit">Update</button>
@@ -70,6 +74,8 @@
       		<input type="text" class="form-control" id="inputValue" placeholder="Value">
     	</div>
     </div>
+				<br />
+				<br />
     <div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10 wish-btn">    	
 			<button class="btn btn-success " type="submit">Add</button>

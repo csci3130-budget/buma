@@ -42,6 +42,8 @@ body {
 }	
 
 .complete-wish {
+	border-style:solid;
+	border-color: #47a447;
 	display: none;
 }	
 
@@ -216,4 +218,8 @@ div.alert {
 div.normal {
 	border:1px solid white;
 	margin:5px 0 5px 0;
+}
+.table.budgets_home td,
+.table.budgets_home th {
+	border: 0;	
 }
