@@ -40,7 +40,7 @@ class UserStoryCreateWishCest
 		// New wish - error in value
 		public function valueError($I) {
 				$I->wantTo('Error check - new wish added');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				// Looks for Item and Cost categories
 				$I->see('Item');
@@ -60,7 +60,7 @@ class UserStoryCreateWishCest
 		//Item addition error (item already in wish list)
 		public function duplicateError($I) {
 				$I->wantTo('Error check - duplicate wishes');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 				
 				//Look for Iteam, and Value
 				$I->see('Item');

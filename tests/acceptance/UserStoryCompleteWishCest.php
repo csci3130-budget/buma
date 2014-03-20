@@ -27,8 +27,8 @@ class UserStoryCompleteWishCest
 		// Provides an error when user has not saved enough money
 		public function completeWishFail($I) {
 				$I->wantTo('Complete item on wish list');
-				$I->amOnPage('/index.php?file=wish_list');
-
+				$I->amOnPage('wish_list');
+                            
 				// Complete code
 				$I->click('completeWish');
 
@@ -39,7 +39,7 @@ class UserStoryCompleteWishCest
 		//Show wish has been removed on screen.
 		public function completeWishRemoved($I) {
 				$I->wantTo('Remove Wish from page after completion');
-				$I->amOnpage('/index.php?file=wish_list');
+				$I->amOnpage('wish_list');
                                 $I->see('Item');
 				$I->see('Value');
 				//create item for wishlist
@@ -57,7 +57,7 @@ class UserStoryCompleteWishCest
 		//incomplete 
 		public function completeAmountChanged($I) {
 				$I->wantTo('Check if the saved value is updated');
-				$I->amOnpage('/index.php?file=wish_list');
+				$I->amOnpage('wish_list');
    				
 				$I->see('Saved: '); 
 				//Amount is added to savings ....
