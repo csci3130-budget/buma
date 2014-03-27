@@ -19,7 +19,7 @@ class UserStoryEditWishCest
 				$I->amOnPage('wish_list');
 
 				// Update
-				$I->click('edit');
+				$I->click('#wish_list_form > button:nth-child(7) > span');
 
 				// Changes wish item or item amount
 				$I->fillField('itemName', 'Laptop');
@@ -33,24 +33,24 @@ class UserStoryEditWishCest
 		public function editWishItemDouble($I) {
 				LoginCest::login($I);	
 				$I->wantTo('Edit a wish but try to add an item that already exists');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				// Add wish first time
-				$I->click('new');
+				$I->click('#my_wish');
 				// Changes wish item or item amount
 				$I->fillField('itemName', 'Laptop');
 				$I->fillField('inputAmount', '1000');
-				$I->click('add');
+				$I->click('#new_wish > div:nth-child(4) > div > a');
 				
 				// Add new item
-				$I->click('new');
+				$I->click('#my_wish');
 				// Changes wish item or item amount
 				$I->fillField('itemName', 'Stuff');
 				$I->fillField('inputAmount', '100');
-				$I->click('add');
+				$I->click('#new_wish > div:nth-child(4) > div > a');
 				
 				// Edit
-				$I->click('edit');
+				$I->click('#wish_list_form > button:nth-child(7) > span');
 				// Changes wish item or item amount
 				$I->fillField('itemName', 'Laptop');
 				$I->fillField('inputAmount', '1000');
@@ -63,10 +63,10 @@ class UserStoryEditWishCest
 		public function editWishValueError($I) {
 				LoginCest::login($I);	
 				$I->wantTo('Edit a wish but try to enter a non-numerical value');
-				$I->amOnPage('/index.php?file=wish_list');
+				$I->amOnPage('wish_list');
 
 				// Update
-				$I->click('edit');
+				$I->click('#wish_list_form > button:nth-child(7) > span');
 
 				// Changes wish item or item amount
 				$I->fillField('itemName', 'Laptop');

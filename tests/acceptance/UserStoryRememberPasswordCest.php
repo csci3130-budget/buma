@@ -17,7 +17,7 @@ class UserStoryRememberPasswordCest
 		 */
 		public function rememberMePass ($I) {
 			$I->amOnPage('login');
-			$I->click('Remember Me');
+			$I->click('#login_form > label > input');
 			
 				// Fill in info
 				// Logout
@@ -28,6 +28,7 @@ class UserStoryRememberPasswordCest
 		 * the username and password should NOT be remembered
 		 */
 		public function rememberMeFail ($I) {
+			
 			$I->amOnPage('login');
 				// Fill in info
 				// Logout

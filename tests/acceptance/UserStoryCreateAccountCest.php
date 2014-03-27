@@ -5,9 +5,10 @@ class UserStoryCreateAccountCest
 {
 
 				public function invalidPassword($I) {
+								LoginCest::login($I);
 								$I->amOnPage('login');
 								//Click the Create New Account on the log in page to creat a new account in BUMA
-								$I->click('Create New Account');
+								$I->click('#login_form > a:nth-child(7) > button');
 								//A new web page should appeared, user can see the register buttoun on that page 
 								$I->sendAjaxGetRequest('/refresh');
 								$I->amOnPage('register');
@@ -27,6 +28,7 @@ class UserStoryCreateAccountCest
 				}
 
 				public function invalidUsername($I) {
+								LoginCest::login($I);
 								$I->amOnPage('login');
 								//Click the Create New Account on the log in page to creat a new account in BUMA
 								$I->click('Create New Account');
@@ -44,14 +46,14 @@ class UserStoryCreateAccountCest
 
 								//The user can not create the account with an invalid password
 								//and stay in the create new account page and see an error message
-								$I->see('Register');
+								$I->click('Register');
 								$I->see('Fill the AMOUNT field correctly.');
 				} 
 
 				public function validInformation($I) {
 								$I->amOnPage('login');
 								//Click the Create New Account on the log in page to create a new account in BUMA
-								$I->click('Create New Account');
+								$I->click('#login_form > a:nth-child(7) > button');
 
 								//A new web page should appeared, user can see the register buttoun on that page
 								$I->sendAjaxGetRequest('/refresh');

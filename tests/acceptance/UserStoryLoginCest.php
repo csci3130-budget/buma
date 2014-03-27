@@ -14,6 +14,7 @@ class UserStoryLoginCest
 
 				// Check if user can see login page
 				public function welcome($I) {
+								
 								$I->wantTo('ensure that frontpage works');
 								$I->amOnPage('login');
 								$I->see('Welcome');
@@ -21,6 +22,7 @@ class UserStoryLoginCest
 
 				// Login with valid information
 				public function validInformation($I) {
+								
 								$I->wantTo('Login with a correct username and password');
 
 								// Should default to centi.cs.dal.ca/group11/buma
@@ -31,12 +33,12 @@ class UserStoryLoginCest
 								$I->fillField('email', 'test');
 								$I->fillField('password', 'test');
 
-								$I->click('Log in');
+								$I->click('#btn_login_form');
 								$I->amOnPage('/home');
 
 								// If we don't see Log in, then we are logged in and the test has passed 
 								$I->sendAjaxGetRequest('/refresh');
-								$I->dontSee('Log in');
+								$I->dontSee('#btn_login_form');
 				}
 
 				// Login with wrong password
@@ -51,6 +53,7 @@ class UserStoryLoginCest
 						                $I->fillField('emal','test');
 								//Enter the wrong password to fail the login
 								$I->fillField('password','1234');
+								$I->click('#btn_login_form');
 
 								//The log in should be failed
 								//User should stay in the login page and see the error message
@@ -66,13 +69,13 @@ class UserStoryLoginCest
 								$I->wantTo('Fail to log in with the wrong username');
 							
 								//Should default to centi.cs.dal.ca/group11/buma
-								$I->amOnPage('');
+								$I->amOnPage('login');
 
 								//Enter the wrong username
 								$I->fillField('email','1234');
 								//We have already have an account created with this password
 								$I->fillField('password','test');
-
+								$I->click('#btn_login_form');
 
 								//The log in should be failed
 								//User should stay in the login page and see the error messaget
@@ -85,7 +88,7 @@ class UserStoryLoginCest
 				// Logout if user is logged in
 			 	public function logoutSuccess($I) {
 								$I->wantTo('Logout of BUMA successfully');
-								$I->amOnPage('');
+								$I->amOnPage('login');
 
 								// Should default to centi.cs.dal.ca/group11/buma
 								$I->see('Welcome to BUBA');
@@ -95,12 +98,14 @@ class UserStoryLoginCest
 								$I->fillField('email', 'test');
 								$I->fillField('password', 'test');
 
-								$I->click('Log in');
-								$I->amOnPage('/home');
+								$I->click('#btn_login_form');
+								$I->amOnPage('home');
 
 								// If we don't see Log in, then we are logged in and the test has passed 
 								$I->sendAjaxGetRequest('home');
 								$I->dontSee('Log in');
-								$I->click('Logout');
+								$I->click('body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.collapse.navbar-collapse > ul > li:nth-child(10) > a');
+								$I->sendAjaxGetRequest('/refrest');
+								$I->amOnPage('login');
+								}
 			}
-}

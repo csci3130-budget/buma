@@ -24,6 +24,9 @@ class UserStoryCreateWishCest
 				$I->amOnPage('wish_list');
 
 				// Looks for Item and Cost categories
+				
+				
+				$I->click('#my_wish');
 				$I->see('Item');
 				$I->see('Cost');
 
@@ -32,7 +35,7 @@ class UserStoryCreateWishCest
 				$I->fillField('itemCost', '1000');
 
 				// Update
-				$I->click('Add Wish');
+				$I->click('#new_wish > div:nth-child(4) > div > a');
 
 				// Will see below text if test has passed
 				$I->see('Item added to wish list!');
@@ -53,7 +56,7 @@ class UserStoryCreateWishCest
 				$I->fillField('itemCost', '@#%^1000');
 
 				// Update
-				$I->click('Add Wish');
+				$I->click('#new_wish > div:nth-child(4) > div > a');
 
 				// Will see below text if test has passed
 				$I->see('Item cost is not valid - please enter your price as an integer (ex: 100)');
@@ -74,7 +77,7 @@ class UserStoryCreateWishCest
 				$I->fillField('Value', '100');
 				
 				//Update
-				$I->click('Add');
+				$I->click('#new_wish > div:nth-child(4) > div > a');
 				
 				//Confirm item was added.
 				$I->see('Item added to wish list!');

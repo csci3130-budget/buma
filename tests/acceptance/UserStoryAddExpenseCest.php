@@ -44,6 +44,7 @@ class UserStoryAddExpenseCest
 
 				}
 
+
 				public function tryToTest(WebGuy $I) {
 								LoginCest::login($I);	
 								$I->wantTo('Add new expense');
