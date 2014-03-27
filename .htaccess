@@ -9,8 +9,11 @@
 	#RewriteCond %{REQUEST_FILENAME} !-d
 	
 	# All the URLs
-	RewriteRule ^(login|create_account|forgot|home|add_expense|wish_list|statistics|new_account|register|logout)[/]*$ index.php?file=$1&friendly_url=true
+	RewriteRule ^(login|create_account|forgot|home|wish_list|statistics|new_account|register|logout)[/]*$ index.php?file=$1&friendly_url=true
 	
 	RewriteRule ^(add_budget)[/]*$ index.php?file=$1&friendly_url=true
 	RewriteRule ^(add_budget)[/]+(\d+)[/]*$ index.php?file=$1&id=$2&friendly_url=true
+	
+	RewriteRule ^(add_expense)[/]*$ index.php?file=$1&friendly_url=true
+	RewriteRule ^(add_expense)[/]+(\d+)[/]*$ index.php?file=$1&id=$2&friendly_url=true
 #</IfModule>

@@ -14,6 +14,7 @@ class UserStoryEditWishCest
 
 		// Edit wish - user is successful
 		public function editWishSuccessful($I) {
+				LoginCest::login($I);	
 				$I->wantTo('Edit a wish to change item in wish or amount the item costs');
 				$I->amOnPage('wish_list');
 
@@ -30,6 +31,7 @@ class UserStoryEditWishCest
 		
 		// Error message if item has already been added to wishlist
 		public function editWishItemDouble($I) {
+				LoginCest::login($I);	
 				$I->wantTo('Edit a wish but try to add an item that already exists');
 				$I->amOnPage('/index.php?file=wish_list');
 
@@ -59,6 +61,7 @@ class UserStoryEditWishCest
 
 		// Value error
 		public function editWishValueError($I) {
+				LoginCest::login($I);	
 				$I->wantTo('Edit a wish but try to enter a non-numerical value');
 				$I->amOnPage('/index.php?file=wish_list');
 

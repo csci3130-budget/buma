@@ -14,6 +14,7 @@ class UserStoryRemoveWishCest
 
 		// Delete wish
 		public function removeWish($I) {
+				LoginCest::login($I);	
 				$I->wantTo('Remove wish');
 				$I->amOnPage('wish_list');
 

@@ -4,14 +4,6 @@ use \WebGuy;
 class UserStoryCreateAccountCest
 {
 
-				public function _before()
-				{
-				}
-
-				public function _after()
-				{
-				}
-
 				public function invalidPassword($I) {
 								$I->amOnPage('login');
 								//Click the Create New Account on the log in page to creat a new account in BUMA
@@ -53,7 +45,7 @@ class UserStoryCreateAccountCest
 								//The user can not create the account with an invalid password
 								//and stay in the create new account page and see an error message
 								$I->see('Register');
-								$I->see('Invalid email or password');
+								$I->see('Fill the AMOUNT field correctly.');
 				} 
 
 				public function validInformation($I) {

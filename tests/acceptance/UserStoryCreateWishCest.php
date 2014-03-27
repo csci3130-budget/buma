@@ -19,6 +19,7 @@ class UserStoryCreateWishCest
 		
 		// New wish - error in item added ***NEED TO FINISH
 		public function itemError($I) {
+				LoginCest::login($I);	
 				$I->wantTo('Error check - new wish added');
 				$I->amOnPage('wish_list');
 
@@ -39,6 +40,7 @@ class UserStoryCreateWishCest
 	
 		// New wish - error in value
 		public function valueError($I) {
+				LoginCest::login($I);	
 				$I->wantTo('Error check - new wish added');
 				$I->amOnPage('wish_list');
 
@@ -59,6 +61,7 @@ class UserStoryCreateWishCest
 		
 		//Item addition error (item already in wish list)
 		public function duplicateError($I) {
+				LoginCest::login($I);	
 				$I->wantTo('Error check - duplicate wishes');
 				$I->amOnPage('wish_list');
 				

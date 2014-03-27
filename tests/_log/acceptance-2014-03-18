@@ -1,0 +1,1124 @@
+[2014-03-18 15:31:39] UserStoryAddBudgetCest.addCategory.INFO: am on page "add_budget" [] []
+[2014-03-18 15:31:40] UserStoryAddBudgetCest.addCategory.INFO: see "Amount" [] []
+[2014-03-18 15:31:40] UserStoryAddBudgetCest.addCategory.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "amount". [] []
+[2014-03-18 15:31:40] UserStoryAddBudgetCest.addCategory.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryAddBudgetCest.addCategory.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryAddExpenseCest.tryToTest.INFO: am on page "add_expense" [] []
+[2014-03-18 15:31:40] UserStoryAddExpenseCest.tryToTest.INFO: see "Description" [] []
+[2014-03-18 15:31:40] UserStoryAddExpenseCest.tryToTest.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "description". [] []
+[2014-03-18 15:31:40] UserStoryAddExpenseCest.tryToTest.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryAddExpenseCest.tryToTest.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishSuccess.INFO: am on page "wish_list" [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishSuccess.INFO: click "completeWish" [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishSuccess.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishFail.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishFail.INFO: click "completeWish" [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishFail.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishFail.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishFail.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishRemoved.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishRemoved.INFO: see "Item" [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishRemoved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishRemoved.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeWishRemoved.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeAmountChanged.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeAmountChanged.INFO: see "Saved: " [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeAmountChanged.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved: ". [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeAmountChanged.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCompleteWishCest.completeAmountChanged.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: click "Create New Account" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "register" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: see "Register" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "email","test1" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "name","test1" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidPassword.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: click "Create New Account" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "register" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: see "Register" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "email","" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "name","" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.invalidUsername.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: click "Create New Account" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: am on page "register" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: see "Register" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: fill field "email","e2214858@drdrb.com" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: fill field "name","Thisis Atest" [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCreateAccountCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.addWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.itemError.INFO: am on page "wish_list" [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.itemError.INFO: see "Item" [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.itemError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.itemError.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.itemError.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.valueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.valueError.INFO: see "Item" [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.valueError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.valueError.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.valueError.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.duplicateError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.duplicateError.INFO: see "Item" [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.duplicateError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.duplicateError.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryCreateWishCest.duplicateError.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishSuccessful.INFO: am on page "wish_list" [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishSuccessful.INFO: click "edit" [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishSuccessful.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishSuccessful.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishSuccessful.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishItemDouble.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishItemDouble.INFO: click "new" [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishItemDouble.ALERT: CSS or XPath 'new' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishItemDouble.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishItemDouble.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishValueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishValueError.INFO: click "edit" [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishValueError.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishValueError.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryEditWishCest.editWishValueError.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.invalidEmail.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.invalidEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.invalidEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.invalidEmail.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.invalidEmail.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.validEmail.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.validEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.validEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.validEmail.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryForgotPasswordCest.validEmail.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.welcome.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.welcome.INFO: see "Welcome" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.welcome.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: fill field "email","test" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: fill field "password","test" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: click "Log in" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: am on page "/home" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: don't see "Log in" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectPassword.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectPassword.INFO: fill field "emal","test" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectPassword.ALERT: Field by name, label, CSS or XPath 'emal' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectPassword.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectPassword.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.INFO: am on page "" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.INFO: fill field "email","1234" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.INFO: fill field "password","test" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.INFO: see "Log in" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.ALERT: Failed asserting that 
+-->  <bold>/refresh</bold><info>404 Not Found Not Found The requested URL /refresh was not found on this server. Apache/2.2.15 (CentOS) Server at centi.cs.dal.ca Port 80</info>
+--> contains "log in". [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.incorrectUsername.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: am on page "" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: see "Welcome to BUBA" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: fill field "email","test" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: fill field "password","test" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: click "Log in" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: am on page "/home" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: send ajax get request "home" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: don't see "Log in" [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> does not contain "log in". [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryLoginCest.logoutSuccess.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryRememberPasswordCest.rememberMePass.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryRememberPasswordCest.rememberMePass.INFO: click "Remember Me" [] []
+[2014-03-18 15:31:40] UserStoryRememberPasswordCest.rememberMePass.ALERT: CSS or XPath 'Remember Me' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryRememberPasswordCest.rememberMePass.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryRememberPasswordCest.rememberMePass.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryRememberPasswordCest.rememberMeFail.INFO: am on page "login" [] []
+[2014-03-18 15:31:40] UserStoryRememberPasswordCest.rememberMeFail.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryRemoveWishCest.removeWish.INFO: am on page "wish_list" [] []
+[2014-03-18 15:31:40] UserStoryRemoveWishCest.removeWish.INFO: click "delete" [] []
+[2014-03-18 15:31:40] UserStoryRemoveWishCest.removeWish.ALERT: CSS or XPath 'delete' was not found on page. [] []
+[2014-03-18 15:31:40] UserStoryRemoveWishCest.removeWish.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryRemoveWishCest.removeWish.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.viewWishes.INFO: am on page "wish_list" [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.viewWishes.INFO: see "Wish" [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.viewWishes.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "wish". [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.viewWishes.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.viewWishes.INFO: PASSED [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.showAmountSaved.INFO: am on page "wish_list" [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.showAmountSaved.INFO: see "Saved:" [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.showAmountSaved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved:". [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.showAmountSaved.INFO: # FAILED # [] []
+[2014-03-18 15:31:40] UserStoryWishListCest.showAmountSaved.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryAddBudgetCest.addCategory.INFO: am on page "add_budget" [] []
+[2014-03-18 15:33:22] UserStoryAddBudgetCest.addCategory.INFO: see "Amount:" [] []
+[2014-03-18 15:33:22] UserStoryAddBudgetCest.addCategory.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "amount:". [] []
+[2014-03-18 15:33:22] UserStoryAddBudgetCest.addCategory.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryAddBudgetCest.addCategory.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryAddExpenseCest.tryToTest.INFO: am on page "add_expense" [] []
+[2014-03-18 15:33:22] UserStoryAddExpenseCest.tryToTest.INFO: see "Description" [] []
+[2014-03-18 15:33:22] UserStoryAddExpenseCest.tryToTest.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "description". [] []
+[2014-03-18 15:33:22] UserStoryAddExpenseCest.tryToTest.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryAddExpenseCest.tryToTest.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishSuccess.INFO: am on page "wish_list" [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishSuccess.INFO: click "completeWish" [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishSuccess.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishFail.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishFail.INFO: click "completeWish" [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishFail.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishFail.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishFail.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishRemoved.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishRemoved.INFO: see "Item" [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishRemoved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishRemoved.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeWishRemoved.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeAmountChanged.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeAmountChanged.INFO: see "Saved: " [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeAmountChanged.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved: ". [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeAmountChanged.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCompleteWishCest.completeAmountChanged.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: click "Create New Account" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "register" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: see "Register" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "email","test1" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "name","test1" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidPassword.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: click "Create New Account" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "register" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: see "Register" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "email","" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "name","" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.invalidUsername.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: click "Create New Account" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: am on page "register" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: see "Register" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: fill field "email","e2214858@drdrb.com" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: fill field "name","Thisis Atest" [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCreateAccountCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.addWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.itemError.INFO: am on page "wish_list" [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.itemError.INFO: see "Item" [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.itemError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.itemError.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.itemError.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.valueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.valueError.INFO: see "Item" [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.valueError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.valueError.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.valueError.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.duplicateError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.duplicateError.INFO: see "Item" [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.duplicateError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.duplicateError.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryCreateWishCest.duplicateError.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishSuccessful.INFO: am on page "wish_list" [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishSuccessful.INFO: click "edit" [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishSuccessful.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishSuccessful.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishSuccessful.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishItemDouble.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishItemDouble.INFO: click "new" [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishItemDouble.ALERT: CSS or XPath 'new' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishItemDouble.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishItemDouble.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishValueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishValueError.INFO: click "edit" [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishValueError.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishValueError.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryEditWishCest.editWishValueError.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.invalidEmail.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.invalidEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.invalidEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.invalidEmail.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.invalidEmail.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.validEmail.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.validEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.validEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.validEmail.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryForgotPasswordCest.validEmail.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.welcome.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.welcome.INFO: see "Welcome" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.welcome.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: fill field "email","test" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: fill field "password","test" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: click "Log in" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: am on page "/home" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: don't see "Log in" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectPassword.INFO: am on page "login" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectPassword.INFO: fill field "emal","test" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectPassword.ALERT: Field by name, label, CSS or XPath 'emal' was not found on page. [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectPassword.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectPassword.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.INFO: am on page "" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.INFO: fill field "email","1234" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.INFO: fill field "password","test" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.INFO: see "Log in" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.ALERT: Failed asserting that 
+-->  <bold>/refresh</bold><info>404 Not Found Not Found The requested URL /refresh was not found on this server. Apache/2.2.15 (CentOS) Server at centi.cs.dal.ca Port 80</info>
+--> contains "log in". [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.INFO: # FAILED # [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.incorrectUsername.INFO: PASSED [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.logoutSuccess.INFO: am on page "" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.logoutSuccess.INFO: see "Welcome to BUBA" [] []
+[2014-03-18 15:33:22] UserStoryLoginCest.logoutSuccess.INFO: fill field "email","test" [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.INFO: fill field "password","test" [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.INFO: click "Log in" [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.INFO: am on page "/home" [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.INFO: send ajax get request "home" [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.INFO: don't see "Log in" [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> does not contain "log in". [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:33:23] UserStoryLoginCest.logoutSuccess.INFO: PASSED [] []
+[2014-03-18 15:33:23] UserStoryRememberPasswordCest.rememberMePass.INFO: am on page "login" [] []
+[2014-03-18 15:33:23] UserStoryRememberPasswordCest.rememberMePass.INFO: click "Remember Me" [] []
+[2014-03-18 15:33:23] UserStoryRememberPasswordCest.rememberMePass.ALERT: CSS or XPath 'Remember Me' was not found on page. [] []
+[2014-03-18 15:33:23] UserStoryRememberPasswordCest.rememberMePass.INFO: # FAILED # [] []
+[2014-03-18 15:33:23] UserStoryRememberPasswordCest.rememberMePass.INFO: PASSED [] []
+[2014-03-18 15:33:23] UserStoryRememberPasswordCest.rememberMeFail.INFO: am on page "login" [] []
+[2014-03-18 15:33:23] UserStoryRememberPasswordCest.rememberMeFail.INFO: PASSED [] []
+[2014-03-18 15:33:23] UserStoryRemoveWishCest.removeWish.INFO: am on page "wish_list" [] []
+[2014-03-18 15:33:23] UserStoryRemoveWishCest.removeWish.INFO: click "delete" [] []
+[2014-03-18 15:33:23] UserStoryRemoveWishCest.removeWish.ALERT: CSS or XPath 'delete' was not found on page. [] []
+[2014-03-18 15:33:23] UserStoryRemoveWishCest.removeWish.INFO: # FAILED # [] []
+[2014-03-18 15:33:23] UserStoryRemoveWishCest.removeWish.INFO: PASSED [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.viewWishes.INFO: am on page "wish_list" [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.viewWishes.INFO: see "Wish" [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.viewWishes.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "wish". [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.viewWishes.INFO: # FAILED # [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.viewWishes.INFO: PASSED [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.showAmountSaved.INFO: am on page "wish_list" [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.showAmountSaved.INFO: see "Saved:" [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.showAmountSaved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved:". [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.showAmountSaved.INFO: # FAILED # [] []
+[2014-03-18 15:33:23] UserStoryWishListCest.showAmountSaved.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryAddBudgetCest.addCategory.INFO: am on page "add_budget" [] []
+[2014-03-18 15:34:09] UserStoryAddBudgetCest.addCategory.INFO: see "BUBA" [] []
+[2014-03-18 15:34:09] UserStoryAddBudgetCest.addCategory.INFO: see "Amount" [] []
+[2014-03-18 15:34:09] UserStoryAddBudgetCest.addCategory.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "amount". [] []
+[2014-03-18 15:34:09] UserStoryAddBudgetCest.addCategory.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryAddBudgetCest.addCategory.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryAddExpenseCest.tryToTest.INFO: am on page "add_expense" [] []
+[2014-03-18 15:34:09] UserStoryAddExpenseCest.tryToTest.INFO: see "Description" [] []
+[2014-03-18 15:34:09] UserStoryAddExpenseCest.tryToTest.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "description". [] []
+[2014-03-18 15:34:09] UserStoryAddExpenseCest.tryToTest.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryAddExpenseCest.tryToTest.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishSuccess.INFO: am on page "wish_list" [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishSuccess.INFO: click "completeWish" [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishSuccess.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishFail.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishFail.INFO: click "completeWish" [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishFail.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishFail.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishFail.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishRemoved.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishRemoved.INFO: see "Item" [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishRemoved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishRemoved.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeWishRemoved.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeAmountChanged.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeAmountChanged.INFO: see "Saved: " [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeAmountChanged.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved: ". [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeAmountChanged.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCompleteWishCest.completeAmountChanged.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: click "Create New Account" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "register" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: see "Register" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "email","test1" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "name","test1" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidPassword.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: click "Create New Account" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "register" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: see "Register" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "email","" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "name","" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.invalidUsername.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: click "Create New Account" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: am on page "register" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: see "Register" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: fill field "email","e2214858@drdrb.com" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: fill field "name","Thisis Atest" [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCreateAccountCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.addWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.itemError.INFO: am on page "wish_list" [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.itemError.INFO: see "Item" [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.itemError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.itemError.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.itemError.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.valueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.valueError.INFO: see "Item" [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.valueError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.valueError.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.valueError.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.duplicateError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.duplicateError.INFO: see "Item" [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.duplicateError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.duplicateError.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryCreateWishCest.duplicateError.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishSuccessful.INFO: am on page "wish_list" [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishSuccessful.INFO: click "edit" [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishSuccessful.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishSuccessful.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishSuccessful.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishItemDouble.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishItemDouble.INFO: click "new" [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishItemDouble.ALERT: CSS or XPath 'new' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishItemDouble.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishItemDouble.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishValueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishValueError.INFO: click "edit" [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishValueError.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishValueError.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryEditWishCest.editWishValueError.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.invalidEmail.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.invalidEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.invalidEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.invalidEmail.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.invalidEmail.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.validEmail.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.validEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.validEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.validEmail.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryForgotPasswordCest.validEmail.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.welcome.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.welcome.INFO: see "Welcome" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.welcome.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: fill field "email","test" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: fill field "password","test" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: click "Log in" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: am on page "/home" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: don't see "Log in" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectPassword.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectPassword.INFO: fill field "emal","test" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectPassword.ALERT: Field by name, label, CSS or XPath 'emal' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectPassword.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectPassword.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.INFO: am on page "" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.INFO: fill field "email","1234" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.INFO: fill field "password","test" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.INFO: see "Log in" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.ALERT: Failed asserting that 
+-->  <bold>/refresh</bold><info>404 Not Found Not Found The requested URL /refresh was not found on this server. Apache/2.2.15 (CentOS) Server at centi.cs.dal.ca Port 80</info>
+--> contains "log in". [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.incorrectUsername.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: am on page "" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: see "Welcome to BUBA" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: fill field "email","test" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: fill field "password","test" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: click "Log in" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: am on page "/home" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: send ajax get request "home" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: don't see "Log in" [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> does not contain "log in". [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryLoginCest.logoutSuccess.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryRememberPasswordCest.rememberMePass.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryRememberPasswordCest.rememberMePass.INFO: click "Remember Me" [] []
+[2014-03-18 15:34:09] UserStoryRememberPasswordCest.rememberMePass.ALERT: CSS or XPath 'Remember Me' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryRememberPasswordCest.rememberMePass.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryRememberPasswordCest.rememberMePass.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryRememberPasswordCest.rememberMeFail.INFO: am on page "login" [] []
+[2014-03-18 15:34:09] UserStoryRememberPasswordCest.rememberMeFail.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryRemoveWishCest.removeWish.INFO: am on page "wish_list" [] []
+[2014-03-18 15:34:09] UserStoryRemoveWishCest.removeWish.INFO: click "delete" [] []
+[2014-03-18 15:34:09] UserStoryRemoveWishCest.removeWish.ALERT: CSS or XPath 'delete' was not found on page. [] []
+[2014-03-18 15:34:09] UserStoryRemoveWishCest.removeWish.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryRemoveWishCest.removeWish.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.viewWishes.INFO: am on page "wish_list" [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.viewWishes.INFO: see "Wish" [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.viewWishes.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "wish". [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.viewWishes.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.viewWishes.INFO: PASSED [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.showAmountSaved.INFO: am on page "wish_list" [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.showAmountSaved.INFO: see "Saved:" [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.showAmountSaved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved:". [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.showAmountSaved.INFO: # FAILED # [] []
+[2014-03-18 15:34:09] UserStoryWishListCest.showAmountSaved.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: am on page "login" [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: fill field "email","test" [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: fill field "password","test" [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: click "Log in" [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: am on page "add_budget" [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: see "Amount" [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "amount". [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryAddBudgetCest.addCategory.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.INFO: am on page "add_expense" [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.INFO: click "Create New Account" [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.INFO: am on page "add_expense" [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.INFO: see "add_expense" [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "add_expense". [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.invaildDescribtion.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.tryToTest.INFO: am on page "add_expense" [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.tryToTest.INFO: see "Description" [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.tryToTest.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "description". [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.tryToTest.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryAddExpenseCest.tryToTest.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishSuccess.INFO: am on page "wish_list" [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishSuccess.INFO: click "completeWish" [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishSuccess.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishFail.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishFail.INFO: click "completeWish" [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishFail.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishFail.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishFail.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishRemoved.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishRemoved.INFO: see "Item" [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishRemoved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishRemoved.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeWishRemoved.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeAmountChanged.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeAmountChanged.INFO: see "Saved: " [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeAmountChanged.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved: ". [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeAmountChanged.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCompleteWishCest.completeAmountChanged.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "login" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: click "Create New Account" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "register" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: see "Register" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "email","test1" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "name","test1" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidPassword.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "login" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: click "Create New Account" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "register" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: see "Register" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "email","" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "name","" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.invalidUsername.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: click "Create New Account" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: am on page "register" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: see "Register" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: fill field "email","e2214858@drdrb.com" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: fill field "name","Thisis Atest" [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCreateAccountCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.addWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.itemError.INFO: am on page "wish_list" [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.itemError.INFO: see "Item" [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.itemError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.itemError.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.itemError.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.valueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.valueError.INFO: see "Item" [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.valueError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.valueError.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.valueError.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.duplicateError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.duplicateError.INFO: see "Item" [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.duplicateError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.duplicateError.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryCreateWishCest.duplicateError.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishSuccessful.INFO: am on page "wish_list" [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishSuccessful.INFO: click "edit" [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishSuccessful.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishSuccessful.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishSuccessful.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishItemDouble.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishItemDouble.INFO: click "new" [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishItemDouble.ALERT: CSS or XPath 'new' was not found on page. [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishItemDouble.INFO: # FAILED # [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishItemDouble.INFO: PASSED [] []
+[2014-03-18 15:38:35] UserStoryEditWishCest.editWishValueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:38:36] UserStoryEditWishCest.editWishValueError.INFO: click "edit" [] []
+[2014-03-18 15:38:36] UserStoryEditWishCest.editWishValueError.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:38:36] UserStoryEditWishCest.editWishValueError.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryEditWishCest.editWishValueError.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.invalidEmail.INFO: am on page "login" [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.invalidEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.invalidEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.invalidEmail.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.invalidEmail.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.validEmail.INFO: am on page "login" [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.validEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.validEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.validEmail.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryForgotPasswordCest.validEmail.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.welcome.INFO: am on page "login" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.welcome.INFO: see "Welcome" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.welcome.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: fill field "email","test" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: fill field "password","test" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: click "Log in" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: am on page "/home" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: don't see "Log in" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectPassword.INFO: am on page "login" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectPassword.INFO: fill field "emal","test" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectPassword.ALERT: Field by name, label, CSS or XPath 'emal' was not found on page. [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectPassword.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectPassword.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.INFO: am on page "" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.INFO: fill field "email","1234" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.INFO: fill field "password","test" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.INFO: see "Log in" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.ALERT: Failed asserting that 
+-->  <bold>/refresh</bold><info>404 Not Found Not Found The requested URL /refresh was not found on this server. Apache/2.2.15 (CentOS) Server at centi.cs.dal.ca Port 80</info>
+--> contains "log in". [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.incorrectUsername.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: am on page "" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: see "Welcome to BUBA" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: fill field "email","test" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: fill field "password","test" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: click "Log in" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: am on page "/home" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: send ajax get request "home" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: don't see "Log in" [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> does not contain "log in". [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryLoginCest.logoutSuccess.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryRememberPasswordCest.rememberMePass.INFO: am on page "login" [] []
+[2014-03-18 15:38:36] UserStoryRememberPasswordCest.rememberMePass.INFO: click "Remember Me" [] []
+[2014-03-18 15:38:36] UserStoryRememberPasswordCest.rememberMePass.ALERT: CSS or XPath 'Remember Me' was not found on page. [] []
+[2014-03-18 15:38:36] UserStoryRememberPasswordCest.rememberMePass.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryRememberPasswordCest.rememberMePass.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryRememberPasswordCest.rememberMeFail.INFO: am on page "login" [] []
+[2014-03-18 15:38:36] UserStoryRememberPasswordCest.rememberMeFail.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryRemoveWishCest.removeWish.INFO: am on page "wish_list" [] []
+[2014-03-18 15:38:36] UserStoryRemoveWishCest.removeWish.INFO: click "delete" [] []
+[2014-03-18 15:38:36] UserStoryRemoveWishCest.removeWish.ALERT: CSS or XPath 'delete' was not found on page. [] []
+[2014-03-18 15:38:36] UserStoryRemoveWishCest.removeWish.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryRemoveWishCest.removeWish.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.viewWishes.INFO: am on page "wish_list" [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.viewWishes.INFO: see "Wish" [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.viewWishes.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "wish". [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.viewWishes.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.viewWishes.INFO: PASSED [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.showAmountSaved.INFO: am on page "wish_list" [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.showAmountSaved.INFO: see "Saved:" [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.showAmountSaved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved:". [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.showAmountSaved.INFO: # FAILED # [] []
+[2014-03-18 15:38:36] UserStoryWishListCest.showAmountSaved.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: fill field "email","test" [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: fill field "password","test" [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: click "Log in" [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: am on page "add_budget" [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: see "Amount" [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "amount". [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryAddBudgetCest.addCategory.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.INFO: am on page "add_expense" [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.INFO: click "Create New Account" [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.INFO: am on page "add_expense" [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.INFO: see "add_expense" [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "add_expense". [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.invaildDescribtion.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.tryToTest.INFO: am on page "add_expense" [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.tryToTest.INFO: see "Description" [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.tryToTest.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "description". [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.tryToTest.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryAddExpenseCest.tryToTest.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishSuccess.INFO: am on page "wish_list" [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishSuccess.INFO: click "completeWish" [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishSuccess.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishFail.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishFail.INFO: click "completeWish" [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishFail.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishFail.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishFail.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishRemoved.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishRemoved.INFO: see "Item" [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishRemoved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishRemoved.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeWishRemoved.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeAmountChanged.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeAmountChanged.INFO: see "Saved: " [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeAmountChanged.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved: ". [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeAmountChanged.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCompleteWishCest.completeAmountChanged.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: click "Create New Account" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "register" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: see "Register" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "email","test1" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "name","test1" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidPassword.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: click "Create New Account" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "register" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: see "Register" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "email","" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "name","" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.invalidUsername.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: click "Create New Account" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: am on page "register" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: see "Register" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: fill field "email","e2214858@drdrb.com" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: fill field "name","Thisis Atest" [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCreateAccountCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.addWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.itemError.INFO: am on page "wish_list" [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.itemError.INFO: see "Item" [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.itemError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.itemError.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.itemError.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.valueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.valueError.INFO: see "Item" [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.valueError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.valueError.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.valueError.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.duplicateError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.duplicateError.INFO: see "Item" [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.duplicateError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.duplicateError.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryCreateWishCest.duplicateError.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishSuccessful.INFO: am on page "wish_list" [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishSuccessful.INFO: click "edit" [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishSuccessful.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishSuccessful.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishSuccessful.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishItemDouble.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishItemDouble.INFO: click "new" [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishItemDouble.ALERT: CSS or XPath 'new' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishItemDouble.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishItemDouble.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishValueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishValueError.INFO: click "edit" [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishValueError.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishValueError.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryEditWishCest.editWishValueError.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.invalidEmail.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.invalidEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.invalidEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.invalidEmail.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.invalidEmail.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.validEmail.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.validEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.validEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.validEmail.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryForgotPasswordCest.validEmail.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.welcome.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.welcome.INFO: see "Welcome" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.welcome.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: fill field "email","test" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: fill field "password","test" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: click "Log in" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: am on page "/home" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: don't see "Log in" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectPassword.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectPassword.INFO: fill field "emal","test" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectPassword.ALERT: Field by name, label, CSS or XPath 'emal' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectPassword.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectPassword.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.INFO: am on page "" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.INFO: fill field "email","1234" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.INFO: fill field "password","test" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.INFO: see "Log in" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.ALERT: Failed asserting that 
+-->  <bold>/refresh</bold><info>404 Not Found Not Found The requested URL /refresh was not found on this server. Apache/2.2.15 (CentOS) Server at centi.cs.dal.ca Port 80</info>
+--> contains "log in". [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.incorrectUsername.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: am on page "" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: see "Welcome to BUBA" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: fill field "email","test" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: fill field "password","test" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: click "Log in" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: am on page "/home" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: send ajax get request "home" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: don't see "Log in" [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> does not contain "log in". [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryLoginCest.logoutSuccess.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryRememberPasswordCest.rememberMePass.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryRememberPasswordCest.rememberMePass.INFO: click "Remember Me" [] []
+[2014-03-18 15:39:38] UserStoryRememberPasswordCest.rememberMePass.ALERT: CSS or XPath 'Remember Me' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryRememberPasswordCest.rememberMePass.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryRememberPasswordCest.rememberMePass.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryRememberPasswordCest.rememberMeFail.INFO: am on page "login" [] []
+[2014-03-18 15:39:38] UserStoryRememberPasswordCest.rememberMeFail.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryRemoveWishCest.removeWish.INFO: am on page "wish_list" [] []
+[2014-03-18 15:39:38] UserStoryRemoveWishCest.removeWish.INFO: click "delete" [] []
+[2014-03-18 15:39:38] UserStoryRemoveWishCest.removeWish.ALERT: CSS or XPath 'delete' was not found on page. [] []
+[2014-03-18 15:39:38] UserStoryRemoveWishCest.removeWish.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryRemoveWishCest.removeWish.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.viewWishes.INFO: am on page "wish_list" [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.viewWishes.INFO: see "Wish" [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.viewWishes.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "wish". [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.viewWishes.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.viewWishes.INFO: PASSED [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.showAmountSaved.INFO: am on page "wish_list" [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.showAmountSaved.INFO: see "Saved:" [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.showAmountSaved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved:". [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.showAmountSaved.INFO: # FAILED # [] []
+[2014-03-18 15:39:38] UserStoryWishListCest.showAmountSaved.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: fill field "email","test" [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: fill field "password","test" [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: click "Log in" [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: am on page "add_budget" [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: see "BUBA" [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: see "Amount" [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "amount". [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryAddBudgetCest.addCategory.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.INFO: am on page "add_expense" [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.INFO: click "Create New Account" [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.INFO: am on page "add_expense" [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.INFO: see "add_expense" [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "add_expense". [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.invaildDescribtion.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.tryToTest.INFO: am on page "add_expense" [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.tryToTest.INFO: see "Description" [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.tryToTest.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "description". [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.tryToTest.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryAddExpenseCest.tryToTest.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishSuccess.INFO: am on page "wish_list" [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishSuccess.INFO: click "completeWish" [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishSuccess.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishFail.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishFail.INFO: click "completeWish" [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishFail.ALERT: CSS or XPath 'completeWish' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishFail.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishFail.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishRemoved.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishRemoved.INFO: see "Item" [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishRemoved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishRemoved.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeWishRemoved.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeAmountChanged.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeAmountChanged.INFO: see "Saved: " [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeAmountChanged.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved: ". [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeAmountChanged.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCompleteWishCest.completeAmountChanged.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: click "Create New Account" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: am on page "register" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: see "Register" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "email","test1" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: fill field "name","test1" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidPassword.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: click "Create New Account" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: am on page "register" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: see "Register" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "email","" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: fill field "name","" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.invalidUsername.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: click "Create New Account" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: am on page "register" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: see "Register" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: fill field "email","e2214858@drdrb.com" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: fill field "name","Thisis Atest" [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.ALERT: Field by name, label, CSS or XPath 'name' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCreateAccountCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.addWishSuccess.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.itemError.INFO: am on page "wish_list" [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.itemError.INFO: see "Item" [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.itemError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.itemError.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.itemError.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.valueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.valueError.INFO: see "Item" [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.valueError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.valueError.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.valueError.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.duplicateError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.duplicateError.INFO: see "Item" [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.duplicateError.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "item". [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.duplicateError.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryCreateWishCest.duplicateError.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishSuccessful.INFO: am on page "wish_list" [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishSuccessful.INFO: click "edit" [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishSuccessful.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishSuccessful.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishSuccessful.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishItemDouble.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishItemDouble.INFO: click "new" [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishItemDouble.ALERT: CSS or XPath 'new' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishItemDouble.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishItemDouble.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishValueError.INFO: am on page "/index.php?file=wish_list" [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishValueError.INFO: click "edit" [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishValueError.ALERT: CSS or XPath 'edit' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishValueError.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryEditWishCest.editWishValueError.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.invalidEmail.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.invalidEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.invalidEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.invalidEmail.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.invalidEmail.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.validEmail.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.validEmail.INFO: click "Forget Password" [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.validEmail.ALERT: CSS or XPath 'Forget Password' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.validEmail.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryForgotPasswordCest.validEmail.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.welcome.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.welcome.INFO: see "Welcome" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.welcome.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: fill field "email","test" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: fill field "password","test" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: click "Log in" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: am on page "/home" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: don't see "Log in" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.validInformation.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectPassword.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectPassword.INFO: fill field "emal","test" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectPassword.ALERT: Field by name, label, CSS or XPath 'emal' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectPassword.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectPassword.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.INFO: am on page "" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.INFO: fill field "email","1234" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.INFO: fill field "password","test" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.INFO: send ajax get request "/refresh" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.INFO: see "Log in" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.ALERT: Failed asserting that 
+-->  <bold>/refresh</bold><info>404 Not Found Not Found The requested URL /refresh was not found on this server. Apache/2.2.15 (CentOS) Server at centi.cs.dal.ca Port 80</info>
+--> contains "log in". [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.incorrectUsername.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: am on page "" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: see "Welcome to BUBA" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: fill field "email","test" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: fill field "password","test" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: click "Log in" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: am on page "/home" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: send ajax get request "home" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: don't see "Log in" [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> does not contain "log in". [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryLoginCest.logoutSuccess.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryRememberPasswordCest.rememberMePass.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryRememberPasswordCest.rememberMePass.INFO: click "Remember Me" [] []
+[2014-03-18 15:41:46] UserStoryRememberPasswordCest.rememberMePass.ALERT: CSS or XPath 'Remember Me' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryRememberPasswordCest.rememberMePass.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryRememberPasswordCest.rememberMePass.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryRememberPasswordCest.rememberMeFail.INFO: am on page "login" [] []
+[2014-03-18 15:41:46] UserStoryRememberPasswordCest.rememberMeFail.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryRemoveWishCest.removeWish.INFO: am on page "wish_list" [] []
+[2014-03-18 15:41:46] UserStoryRemoveWishCest.removeWish.INFO: click "delete" [] []
+[2014-03-18 15:41:46] UserStoryRemoveWishCest.removeWish.ALERT: CSS or XPath 'delete' was not found on page. [] []
+[2014-03-18 15:41:46] UserStoryRemoveWishCest.removeWish.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryRemoveWishCest.removeWish.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.viewWishes.INFO: am on page "wish_list" [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.viewWishes.INFO: see "Wish" [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.viewWishes.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "wish". [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.viewWishes.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.viewWishes.INFO: PASSED [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.showAmountSaved.INFO: am on page "wish_list" [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.showAmountSaved.INFO: see "Saved:" [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.showAmountSaved.ALERT: Failed asserting that 
+-->  <bold>/group11/buma/login</bold><info>BUMA     BUMA       	 Welcome to BUBA Remember me  	 Forgot Password  	 Log in  	 Create New Account</info>
+--> contains "saved:". [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.showAmountSaved.INFO: # FAILED # [] []
+[2014-03-18 15:41:46] UserStoryWishListCest.showAmountSaved.INFO: PASSED [] []
