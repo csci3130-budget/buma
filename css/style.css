@@ -42,8 +42,6 @@ body {
 }	
 
 .complete-wish {
-	border-style:solid;
-	border-color: #47a447;
 	display: none;
 }	
 
@@ -78,7 +76,8 @@ body {
 	display: block;
 }
 
-.budget_id {
+.budget_id,
+.expense_id {
 	display: none;
 }
 
@@ -96,7 +95,10 @@ body {
 	font-weight: bold;
 	font-size: 16px;
 	width: 80px;
-	margin-top: 1px;
+	margin-bottom: 40px;
+}
+.wish_text h5 {
+	line-height: 30px;
 }
 .wish_progress_text{
 	text-align: center;
@@ -110,23 +112,26 @@ body {
 	width: 82px;
 	margin-top: 10px;
 }
+.btn_wish_list {
+	float: right
+}
+.btn-space.align1 {
+	float: right;
+}
 .align-bar {
 	padding-top: -5px;
-text-align: center;
+	text-align: center;
 }
 
 .edit{
 	margin-left: 10px;
 }
 .saved-text{
-	padding-top: 10px;
 	text-align: center;
 	font-size: 18px;
 }
 .progress {
-  margin-bottom: 0px;
-	float: left;
-	width: 300px;
+	margin-bottom: 10px;
 }
 #mian-con {
      width:700px;
@@ -211,7 +216,8 @@ div.alert {
 }
 
 #add_budget_form .alert,
-#login_form .alert {
+#login_form .alert,
+#wish_list_form .alert {
 	display: none;
 }
 	
@@ -221,5 +227,14 @@ div.normal {
 }
 .table.budgets_home td,
 .table.budgets_home th {
-	border: 0;	
+	border: 0;
+	text-align: center;	
+}
+/*.tableFirstLine.warning td,
+.tableFirstLine.success td{
+	text-align: left;
+}*/
+
+.red-color {
+	color: red;
 }
