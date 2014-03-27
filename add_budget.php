@@ -9,7 +9,8 @@ $budget->setBudgetId($id);
 $category_id = $budget->getCategoryId();
 $amount = $budget->getAmount();
 
-?><form class="form-horizontal" role="form" action="add_budget_post.php" id="add_budget_form">
+?><h1 class="page-title"><?php echo ($id ? 'Edit' : 'Add') ?> budget</h1>
+<form class="form-horizontal" role="form" action="add_budget_post.php" id="add_budget_form">
     <div class="form-group">
     	<input type="hidden" name="budget_id" value="<?php echo $id; ?>">
    	    <label for="amount" class="col-sm-2 control-label">Amount:</label>
@@ -38,7 +39,7 @@ $amount = $budget->getAmount();
 
 				foreach ($categories as $k => $category)
 					echo '<option ' . (strlen($category_id) && $category_id == $category['category_id'] ? 'selected="selected"' : '') . ' value="' . $category['category_id'] . '">' . utf8_encode(ucfirst($category['name'])) . '</option>';
-				
+
 				$connection->closeConnection();
 				
 				?><option value="other">Other</option>
