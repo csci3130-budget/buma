@@ -93,28 +93,35 @@ $(document).ready( function() {
 		$(".remove-wish").hide();
 		$("#edit-wish").hide();
 		$(".complete-wish").hide();
-	});		
+	});
+	
+	/*	Ajax for add new wish	*/
+	$('#wish_list_form .btn_add_wish').click(function(){
+		var form_data = $("#wish_list_form").serialize(),
+			description = $("#wish_list_form input[name='description']").val(),
+			amount = $("#wish_list_form input[name='amount']").val(),
+			message = $("#wish_list_form .alert.my_alert");
 
-/*});
 		message.hide().removeClass("alert-success");
-		if (amount == "undefined" || amount == "") message.show().html("Fill the AMOUNT field correctly.");
-		else if (category == "undefined" || category == "") message.show().html("Fill the CATEGORY field correctly.");
-		else if (category == "other" && (new_category == "undefined" || new_category == "")) message.show().html("Fill the OTHER field correctly.");
+		if (description == "undefined" || description == "") message.show().html("Fill the ITEM field correctly.");
+		else if (amount == "undefined" || amount == "") message.show().html("Fill the AMOUNT field correctly.");
 		else {
-			if (category == "other") add_category = true;
-			alert("Category added.");
 			$.ajax({
 				type: "POST",
-				url: "/add_budget_post.php",
-				data: form_data,
+				url: "/group11/buma/wish_list_post.php",
+				data: form_data + "&action=insert",
 				success: function(result) {
-					if (result == "Budget added.") message.addClass("alert-success");
+					/*if (result == "Logged in.") {
+						message.addClass("alert-success");
+						window.location.replace("home");
+					}*/
+					alert(result);
 					message.show().html(result);
 				}
 			});
 		}
 		return false;
-	});*/
+	});
 	
 	/*	Ajax for login form	*/
 	$('#btn_login_form').click(function(){
@@ -126,7 +133,6 @@ $(document).ready( function() {
 		message.hide().removeClass("alert-success");
 		if (email == "undefined" || email == "") message.show().html("Fill the EMAIL field correctly.");
 		else if (password == "undefined" || password == "") message.show().html("Fill the PASSWORD field correctly.");
-
 		else {
 			if ($("#login_form input[name='remember_me']").is(':checked')) {
 				$.ajax({
@@ -148,33 +154,9 @@ $(document).ready( function() {
 					message.show().html(result);
 				}
 			});
-
 		}
-
 		return false;
 	});
-	/*Ajax for forgot form*/		
-	/*$('#forget_form').click(function(){
-		var form_data =$("#forget_form").serialize(),
-			email = $("#forget_form input[name='email']").val(),
-			message.hide().removeClass("alert-success");
-		if (email == "undefined" || email == "") message.show().html("Fill the EMAIL field correctly.");
-		
-		else {
-			$.ajax({
-				type: "POST",
-				url: "/group11/buma/forget_post.php",
-				data: form_data,
-				success: function(result) {
-					if (result == "Message sended.") {
-						message.addClass("alert-success");
-					}
-					message.show().html(result);
-				}
-			});
-		}
-		return false;
-			});		*/
 			
 	/*	Ajax for delete budget home	*/
 	$('.budgets_home .btn_delete').click(function(){
@@ -191,24 +173,22 @@ $(document).ready( function() {
 		});
 		return false;
 	});
-	
-	/*	Ajax for edit budget	*/
-	/*$('.budgets_home .btn_delete').click(function(){
-		var budget_id = $(this).prev().prev().prev().html();
+
+		/*	Ajax for delete expense home	*/
+	$('.budgets_home .delete_expense.btn_delete').click(function(){
+		var expense_id = $(this).prev().html();
 		$.ajax({
 			type: "POST",
-			url: "/group11/buma/add_budget_post.php",
-			data: "budget_id=" + budget_id + "&action=delete" ,
+			url: "/group11/buma/add_expense_post.php",
+			data: "expense_id=" + expense_id + "&action=delete" ,
 			success: function(result) {
-				//alert(result);
-				if (result == "Budget deleted.") {
+				if (result == "Expense deleted.") {
 					window.location.replace("home");
 				}
 			}
 		});
 		return false;
-	});*/
-
+	});
 
 	/* Ajax for register form */
 	$('#register_form_buttom').click(function(){ 
@@ -216,12 +196,9 @@ $(document).ready( function() {
 			email  	  = $("#register_form input[name='email']").val(),
 			password  = $("#register_form input[name='password']").val(),
 			username  = $("#register_form input[name='username']").val(),
-			//userid	  = $("#register_form input[name='user_id']").val(),
 			repass	  = $("#register_form input[name='repass']").val(),
 			message = $("#register_form .alert");
 			message.hide().removeClass("alert-success");
-
-		
 
 		if (email == "undefined" || email == "" || (!email.match(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/))) {
 			message.show().html("Fill email field correctly.");
@@ -235,10 +212,6 @@ $(document).ready( function() {
 			message.show().html("Account username is empty or less than 6");
 			message.addClass("alert-failure");
 		}
-		//else if (userid == "undefined" || userid == ""|| userid.lenth <6){
-		//	message.show().html("Userid is empty or less than 6");
-		//	message.addClass("alert-failure");
-		//}
 		else if ((!repass.match(password))){
 			message.show().html("password not match!");
 			message.addClass("alert-failure");
@@ -285,5 +258,46 @@ $(document).ready( function() {
 			});
 		} 
 		return false;
-			});		
+	});
+
+	// Add expense accordion (to save spave for vieing list items)
+	
+	/*	Ajax for add_expense form	*/
+	$('#btn_add_expense_form').click(function() {
+		var form_data = $("#add_expense_form").serialize(),
+			amount = $("#add_expense_form input[name='amount']").val(),
+			description = $("#add_expense_form input[name='description']").val(),
+			budget_id = $("#add_expense_form input[name='budget_id']").val(),
+			expense_id = $("#add_expense_form input[name='expense_id']").val(),
+			message = $("#add_expense_form .alert");
+		message.hide().removeClass("alert-success");
+
+		if (description == "undefined" || description == "") {
+			message.show().html("Fill the DESCRIPTION correctly.");
+			message.addClass("alert-failure");
+		}
+		else if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|0)?(\.[0-9]{1,2})?$/))) {
+			message.show().html("Fill the AMOUNT field correctly.");
+			message.addClass("alert-failure");
+		}
+		else if (budget_id == "undefined" || budget_id == "") {
+			message.show().html("Select a BUDGET correctly.");
+			message.addClass("alert-failure");
+		}
+		else {
+			$.ajax({
+				type: "POST",
+				url: "/group11/buma/add_expense_post.php",
+				data: form_data + (expense_id > 0 ? "&action=edit" : ""),
+				success: function(result) {
+					message.show().html(result);
+					if (result == "Expense added.") {
+						message.addClass("alert-success");
+						$("#add_expense_form input[name='amount']").val('');
+						$("#add_expense_form input[name='description']").val('');
+					}
+				}
+			});
+		}
+	});
 });
