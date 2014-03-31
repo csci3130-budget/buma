@@ -32,7 +32,7 @@ $(document).ready( function() {
 			add_category = false;
 			message.hide().removeClass("alert-success");
 		
-		if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|0)?(\.[0-9]{1,2})?$/))) {
+		if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/^\$?[0-9]+(\.[0-9][0-9])?$/))) {
 			message.show().html("Fill the AMOUNT field correctly.");
 			message.addClass("alert-failure");
 		}
@@ -98,24 +98,23 @@ $(document).ready( function() {
 	/*	Ajax for add new wish	*/
 	$('#wish_list_form .btn_add_wish').click(function(){
 		var form_data = $("#wish_list_form").serialize(),
+			wish_list_id = $("#wish_list_form input[name='wish_list_id']").val(),
 			description = $("#wish_list_form input[name='description']").val(),
 			amount = $("#wish_list_form input[name='amount']").val(),
 			message = $("#wish_list_form .alert.my_alert");
 
 		message.hide().removeClass("alert-success");
 		if (description == "undefined" || description == "") message.show().html("Fill the ITEM field correctly.");
-		else if (amount == "undefined" || amount == "") message.show().html("Fill the AMOUNT field correctly.");
+		else if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/^\$?[0-9]+(\.[0-9][0-9])?$/))) message.show().html("Fill the ITEM field correctly.");
 		else {
 			$.ajax({
 				type: "POST",
 				url: "/group11/buma/wish_list_post.php",
-				data: form_data + "&action=insert",
+				data: form_data + (wish_list_id > 0 ? "&action=edit" : ""),
 				success: function(result) {
-					/*if (result == "Logged in.") {
+					if (result == "Wish added.") {
 						message.addClass("alert-success");
-						window.location.replace("home");
-					}*/
-					alert(result);
+					}
 					message.show().html(result);
 				}
 			});
@@ -276,7 +275,7 @@ $(document).ready( function() {
 			message.show().html("Fill the DESCRIPTION correctly.");
 			message.addClass("alert-failure");
 		}
-		else if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|0)?(\.[0-9]{1,2})?$/))) {
+		else if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/^\$?[0-9]+(\.[0-9][0-9])?$/))) {
 			message.show().html("Fill the AMOUNT field correctly.");
 			message.addClass("alert-failure");
 		}

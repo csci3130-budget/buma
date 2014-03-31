@@ -1,32 +1,58 @@
 <?php
 
 include_once dirname(__FILE__) . '/config.php';
+    $connection = new createConnection();
+    $connection->connectToDatabase();
 
-?><h1 class="page-title">Wish List</h1>
-<form class="container" role="form" action="wish_list" id="wish_list_form">
-	<div class="progress progress-striped active">
-		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width: 80%;"></div>
-	</div>
-	<div class="align-bar"><h5 class="wish_text">Laptop</h5><h5 class="wish_text">$1000.00</h5></div>
-    <button class="remove btn_wish_list btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
-    <span class="btn-space align1"></span>
-    <button class="complete btn_wish_list btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
-    <span class="btn-space align1"></span>
-	<button class="edit btn_wish_list btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
-    <div class="clear"></div>
-
-	<div class="progress progress-striped active">
-		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="80" style="width: 8%;"></div>
-	</div>
-	<div class="align-bar"><h5 class="wish_text">TV</h5><h5 class="wish_text">$100.00</h5></div>
-    <button class="remove btn_wish_list btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
-    <span class="btn-space align1"></span>
-    <button class="complete btn_wish_list btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
-    <span class="btn-space align1"></span>
-	<button class="edit btn_wish_list btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
-    <div class="clear"></div>
+    $sql = 'SELECT w.name,
+               w.price,
+               w.wish_list_id
+        FROM ' . $connection->database . '.wish_list w 
+        WHERE w.user_id = ' . htmlentities($user_id) . '
+        ORDER BY w.name ASC';
+        
+    $wishes = $connection->runSqlWithReturn($sql);
     
-	<h5 class="saved-text">Saved: $80.00</h5>
+    $sql = 'SELECT sum(e.amount) as Amount
+            FROM ' . $connection->database . '.expense e, ' . $connection->database . '.budget b
+            WHERE b.user_id = ' . htmlentities($user_id) . '
+               AND b.budget_id = e.budget_id';
+    
+    $TotalSpentAmount = $connection->runSqlWithReturn($sql);
+
+    $sql = 'SELECT sum(b.amount) as Amount
+            FROM ' . $connection->database . '.budget b
+            WHERE b.user_id = ' . htmlentities($user_id) . '';
+
+    
+    $TotalBudgetAmount = $connection->runSqlWithReturn($sql);
+
+    foreach ($TotalSpentAmount as $ts){
+        foreach ($TotalBudgetAmount as $tb){
+            $save = $tb['Amount'] - $ts['Amount'];
+        }
+    }
+
+    echo '<h1 class="page-title">Wish List</h1>
+        <form class="container" role="form" action="wish_list" id="wish_list_form">';
+
+    foreach ($wishes as $w){
+        echo '  <div class="progress progress-striped active">
+                <div class="progress-bar" role="progressbar" aria-valuenow="' . $save. '" aria-valuemin="100" aria-valuemax="' . $w['price'] . '" style="width: '.($save*100)/$w['price'].'%;"></div>
+                </div>
+                <div class="align-bar"><h5 class="wish_text">' . $w['name'] . '</h5><h5 class="wish_text">$'. number_format($w["price"], 2, '.', ',') . '</h5></div>
+                <button class="remove btn_wish_list btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+                <span class="btn-space align1"></span>
+                <button class="complete btn_wish_list btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+                <span class="btn-space align1"></span>
+                <button class="edit btn_wish_list btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+                <div class="clear"></div>';
+    }
+
+    echo '<h5 class="saved-text">Saved: $'. number_format($save, 2, '.', ',') . '</h5>';
+?>
+    
+	
 
     <!-- REMOVE WISH ALERT -->
     <div class="alert alert-danger fade in remove-wish">
