@@ -2,7 +2,16 @@
 
 include_once dirname(__FILE__) . '/../config.php';
 
-// Create a class for get and manage form data
+/**
+ * @class budget
+ * Create a class for get and manage form data
+ *
+ * @param budget_id
+ * @param category_id
+ * @param amount
+ * @param sql
+ * @param connection
+ */	
 class Budget {
     public $budget_id;
     public $category_id;

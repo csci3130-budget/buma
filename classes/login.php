@@ -2,7 +2,15 @@
 
 include_once dirname(__FILE__) . '/../config.php';
 
-// Create a class for get and manage form data
+/**
+ * @class login
+ * Create a class for get and manage form data
+ *
+ * @param email
+ * @param password
+ * @param connection
+ * @param user_data
+ */	
 class Login {
     public $email;
     public $password;

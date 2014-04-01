@@ -2,7 +2,16 @@
 include_once dirname(__FILE__) . '/../config.php';
 include_once dirname(__FILE__) . '/classes/connection.php';
 
-//Set up variable that need to be register into datatbase.
+/**
+ * @class reg
+ * Set up variable that need to be register into datatbase.
+ *
+ * @param userid
+ * @param username
+ * @param password
+ * @param email
+ * @param regdate
+ */	
 class register {
 	public $userid;
 	public $username;

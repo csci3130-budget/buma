@@ -2,7 +2,14 @@
 
 include_once dirname(__FILE__) . '/../config.php';
 
-// Create a class for get and manage form data
+/**
+ * @class wish_list
+ * Create a class for get and manage form data
+ *
+ * @param wish_id
+ * @param description
+ * @param amount
+ */	
 class WishList {
     public $wish_id;
     public $description;

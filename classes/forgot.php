@@ -3,7 +3,15 @@ include_once dirname(__FILE__) . '/../config.php';
 include_once dirname(__FILE__) . '/classes/connection.php';
  
 
-//Set up variable that need to be register into datatbase.
+/**
+ * @class forgot
+ * Set up variable that need to be register into datatbase.
+ *
+ * @param email
+ * @param user_data
+ * @param sql
+ * @param connection
+ */	
 class forgot {
 	public $email;
 

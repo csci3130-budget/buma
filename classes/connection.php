@@ -1,6 +1,15 @@
 <?php
 
-// Create a class for make connection
+/**
+ * @class connection
+ * Create a class for make connection
+ *
+ * @param host
+ * @param username
+ * @param password
+ * @param database
+ * @param myconn
+ */	
 class createConnection {
     var $host = "localhost";
     var $username = "group11";
