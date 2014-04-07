@@ -17,8 +17,7 @@ class UserStoryCreateWishCest
 		
 		}
 		
-		// New wish - error in item added ***NEED TO FINISH
-		public function itemError($I) {
+		public function additem($I) {
 				LoginCest::login($I);	
 				$I->wantTo('Error check - new wish added');
 				$I->amOnPage('wish_list');
@@ -28,7 +27,7 @@ class UserStoryCreateWishCest
 				
 				$I->click('#my_wish');
 				$I->see('Item');
-				$I->see('Cost');
+				$I->see('amount');
 
 				// Fills in test input and test option
 				$I->fillField('wishItem', 'Laptop');
@@ -49,7 +48,7 @@ class UserStoryCreateWishCest
 
 				// Looks for Item and Cost categories
 				$I->see('Item');
-				$I->see('Cost');
+				$I->see('amount');
 
 				// Fills in test input and test option
 				$I->fillField('wishItem', 'Laptop');
@@ -70,11 +69,11 @@ class UserStoryCreateWishCest
 				
 				//Look for Iteam, and Value
 				$I->see('Item');
-				$I->see('Value');
+				$I->see('amount');
 				
 				//Fill in fields with rest items
 				$I->fillField('Item', 'test item');
-				$I->fillField('Value', '100');
+				$I->fillField('itemCost', '100');
 				
 				//Update
 				$I->click('#new_wish > div:nth-child(4) > div > a');
@@ -84,7 +83,7 @@ class UserStoryCreateWishCest
 				
 				//Fill in fields with duplicate item
 				$I->fillField('Item', 'test item');
-				$I->fillField('Value', '100');
+				$I->fillField('itemCost', '100');
 				
 				//Update
 				$I->click('Add');
@@ -95,4 +94,5 @@ class UserStoryCreateWishCest
 		// TESTS TO COMPLETE
 		// Success message if item added to wishlist
 		// Show item added in database
+		
 }  

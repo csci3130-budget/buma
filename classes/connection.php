@@ -4,11 +4,11 @@
  * @class connection
  * Create a class for make connection
  *
- * @param host
- * @param username
- * @param password
- * @param database
- * @param myconn
+ * @var host
+ * @var username
+ * @var password
+ * @var database
+ * @var myconn
  */	
 class createConnection {
     var $host = "localhost";

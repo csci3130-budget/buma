@@ -4,20 +4,15 @@ use \WebGuy;
 class UserStoryRememberPasswordCest
 {
 
-    public function _before()
-    {
-    }
-
-    public function _after()
-    {
-    }
-
 		/* A test to check that when the remember me checkbox is selected, 
 		 * the username and password should be remembered
 		 */
 		public function rememberMePass ($I) {
 			$I->amOnPage('login');
-			$I->click('#login_form > label > input');
+			$I->checkOption('#login_form > label > input');
+			LoginCest::login($I);	
+			$I->click('body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.collapse.navbar-collapse > ul > li:nth-child(10) > a');
+			$I->see('sarah_2819@hotmail.com');
 			
 				// Fill in info
 				// Logout
@@ -30,7 +25,11 @@ class UserStoryRememberPasswordCest
 		public function rememberMeFail ($I) {
 			
 			$I->amOnPage('login');
-				// Fill in info
+			LoginCest::login($I);
+			$I->click('body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.collapse.navbar-collapse > ul > li:nth-child(10) > a');
+			$I->dontSee('sarah_2819@hotmail.com');
+			
+			// Fill in info
 				// Logout
 				// See results
 		}

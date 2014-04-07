@@ -16,4 +16,7 @@
 	
 	RewriteRule ^(add_expense)[/]*$ index.php?file=$1&friendly_url=true
 	RewriteRule ^(add_expense)[/]+(\d+)[/]*$ index.php?file=$1&id=$2&friendly_url=true
+	
+	RewriteRule ^(wish_list)[/]*$ index.php?file=$1&friendly_url=true
+	RewriteRule ^(wish_list)[/]+(\d+)[/]*$ index.php?file=$1&id=$2&friendly_url=true
 #</IfModule>

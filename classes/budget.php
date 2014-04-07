@@ -6,11 +6,11 @@ include_once dirname(__FILE__) . '/../config.php';
  * @class budget
  * Create a class for get and manage form data
  *
- * @param budget_id
- * @param category_id
- * @param amount
- * @param sql
- * @param connection
+ * @var budget_id
+ * @var category_id
+ * @var amount
+ * @var sql
+ * @var connection
  */	
 class Budget {
     public $budget_id;

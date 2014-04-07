@@ -4,15 +4,15 @@
  * @class mailclass
  * Create a class sending mail
  *
- * @param smtp_port
- * @param time_out
- * @param host_name
- * @param log_file
- * @param relay_host
- * @param debug
- * @param auth
- * @param user
- * @param pass
+ * @var smtp_port
+ * @var time_out
+ * @var host_name
+ * @var log_file
+ * @var relay_host
+ * @var debug
+ * @var auth
+ * @var user
+ * @var pass
  */	
 
 <!--This page is referenced to http://blog.csdn.net/dongsg11200/article/details/5620044-->

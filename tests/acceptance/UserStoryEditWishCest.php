@@ -17,13 +17,16 @@ class UserStoryEditWishCest
 				LoginCest::login($I);	
 				$I->wantTo('Edit a wish to change item in wish or amount the item costs');
 				$I->amOnPage('wish_list');
-
+					
 				// Update
 				$I->click('#wish_list_form > button:nth-child(7) > span');
-
+				
+				$I->see('Item');
+				$I->see('amount');
+				
 				// Changes wish item or item amount
-				$I->fillField('itemName', 'Laptop');
-				$I->fillField('inputAmount', '1000');
+				$I->fillField('wishItem', 'Laptop');
+				$I->fillField('itemCost', '1000');
 
 				// Will see 'Information updated' if test has passed
 				$I->see('Information updated');
@@ -52,8 +55,8 @@ class UserStoryEditWishCest
 				// Edit
 				$I->click('#wish_list_form > button:nth-child(7) > span');
 				// Changes wish item or item amount
-				$I->fillField('itemName', 'Laptop');
-				$I->fillField('inputAmount', '1000');
+				$I->fillField('wishItem', 'Laptop');
+				$I->fillField('itemCost', '@#%^1000');
 
 				// Will see 'Information updated' if test has passed
 				$I->see('Error: cannot ask for same wish twice');
@@ -69,8 +72,8 @@ class UserStoryEditWishCest
 				$I->click('#wish_list_form > button:nth-child(7) > span');
 
 				// Changes wish item or item amount
-				$I->fillField('itemName', 'Laptop');
-				$I->fillField('inputAmount', 'Laptop');
+				$I->fillField('wishItem', 'Laptop');
+				$I->fillField('itemCost', 'Laptop');
 
 				// Will see 'Information updated' if test has passed
 				$I->see('Error: amount field must be a number');

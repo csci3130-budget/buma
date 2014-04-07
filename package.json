@@ -1,6 +1,6 @@
 {
-  "name": "BUMA",
-  "description": "CSCI 3130 Group Project",
+  "name": "demoapp",
+  "description": "CSCI 3130 Test App",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {

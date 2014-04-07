@@ -7,10 +7,10 @@ include_once dirname(__FILE__) . '/classes/connection.php';
  * @class forgot
  * Set up variable that need to be register into datatbase.
  *
- * @param email
- * @param user_data
- * @param sql
- * @param connection
+ * @var email
+ * @var user_data
+ * @var sql
+ * @var connection
  */	
 class forgot {
 	public $email;

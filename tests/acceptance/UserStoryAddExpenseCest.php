@@ -39,7 +39,7 @@ class UserStoryAddExpenseCest
 
 
 								//The user can not create the expense with an a empty amount and stay in the add expense page and see an error message
-								$I->see('add_expense');
+								$I->click('#btn_add_expense_form');
 								$I->see('Fill the Description field correctly.');
 
 				}

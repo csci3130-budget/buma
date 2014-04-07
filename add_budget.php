@@ -3,6 +3,13 @@
 include_once dirname(__FILE__) . '/config.php';
 include_once dirname(__FILE__) . '/classes/budget.php';
 
+/**
+ * @class add_budget
+ * @param id
+ * @param budget
+ * @param category_id
+ * @param amount
+ */	
 $id = isset($p['id']) ? $p['id'] : (isset($g['id']) ? $g['id'] : '0');
 $budget = new Budget;
 $budget->setBudgetId($id);
@@ -23,7 +30,11 @@ $amount = $budget->getAmount();
         <div class="col-sm-10">
             <select class="form-control" id="category" name="category_id"><?php
 				
-				// Get the user categories
+				/** Get the user categories
+				 * @param connection
+				 * @param sql
+         * @param categories 
+				 */	
 				$connection = new createConnection();
 				$connection->connectToDatabase();
 				

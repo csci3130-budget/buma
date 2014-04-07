@@ -16,6 +16,19 @@ $(document).ready( function() {
 		}
 	});
 	
+	/* Scroll to end of page */
+	$('#my_wish').click( function() {
+		$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+	});
+	
+	$('.edit').click( function() {
+		$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+	});
+	
+	$('.btn_add_wish').click( function() {
+		$('#new_wish').hide();
+	});
+	
 	if ($("#add_budget_form select[name='category']").val() == "other") {
 		$('#new_category').show();
 		$('#otherLabel').show();
@@ -73,7 +86,7 @@ $(document).ready( function() {
 	
 	/* Remove wish */
 	$(".remove").click( function() {
-		$(".remove-wish").show();
+		//$(".remove-wish").show();
 		$(".complete-wish").hide();
 		$("#edit-wish").hide();
 		$("#new_wish").hide();
@@ -81,7 +94,7 @@ $(document).ready( function() {
 	
 	/* Complete wish */
 	$(".complete").click( function() {
-		$(".complete-wish").show();
+		//$(".complete-wish").show();
 		$(".remove-wish").hide();
 		$("#edit-wish").hide();
 		$("#new_wish").hide();
@@ -98,23 +111,26 @@ $(document).ready( function() {
 	/*	Ajax for add new wish	*/
 	$('#wish_list_form .btn_add_wish').click(function(){
 		var form_data = $("#wish_list_form").serialize(),
-			wish_list_id = $("#wish_list_form input[name='wish_list_id']").val(),
+			wish_id = $("#wish_list_form input[name='wish_id']").val(),
 			description = $("#wish_list_form input[name='description']").val(),
 			amount = $("#wish_list_form input[name='amount']").val(),
 			message = $("#wish_list_form .alert.my_alert");
 
 		message.hide().removeClass("alert-success");
 		if (description == "undefined" || description == "") message.show().html("Fill the ITEM field correctly.");
-		else if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/^\$?[0-9]+(\.[0-9][0-9])?$/))) message.show().html("Fill the ITEM field correctly.");
+		else if (amount == "undefined" || amount == "" || amount == 0 || (!amount.match(/^\$?[0-9]+(\.[0-9][0-9])?$/))) message.show().html("Fill the VALUE field correctly.");
 		else {
 			$.ajax({
 				type: "POST",
 				url: "/group11/buma/wish_list_post.php",
-				data: form_data + (wish_list_id > 0 ? "&action=edit" : ""),
+				data: form_data + (wish_id > 0 ? "&action=edit" : ""),
 				success: function(result) {
 					if (result == "Wish added.") {
 						message.addClass("alert-success");
-					}
+						window.location.replace("/group11/buma/wish_list");
+					} else if (result == "Wish edited.") 
+						window.location.replace("/group11/buma/wish_list");
+						message.addClass("alert-success");
 					message.show().html(result);
 				}
 			});
@@ -172,8 +188,24 @@ $(document).ready( function() {
 		});
 		return false;
 	});
+	
+	/*	Ajax for delete wish	*/
+	$('.remove.btn_wish_list').click(function(){
+		var wish_id = $(this).prev().html();
+		$.ajax({
+			type: "POST",
+			url: "/group11/buma/wish_list_post.php",
+			data: "wish_id=" + wish_id + "&action=delete" ,
+			success: function(result) {
+				if (result == "Wish deleted.") {
+					window.location.replace("/group11/buma/wish_list");
+				}
+			}
+		});
+		return false;
+	});
 
-		/*	Ajax for delete expense home	*/
+	/*	Ajax for delete expense home	*/
 	$('.budgets_home .delete_expense.btn_delete').click(function(){
 		var expense_id = $(this).prev().html();
 		$.ajax({
@@ -183,6 +215,22 @@ $(document).ready( function() {
 			success: function(result) {
 				if (result == "Expense deleted.") {
 					window.location.replace("home");
+				}
+			}
+		});
+		return false;
+	});
+	
+	/*	Ajax for complete wish	*/
+	$('.complete.btn_wish_list').click(function(){
+		var wish_id = $(this).prev().prev().prev().html();
+		$.ajax({
+			type: "POST",
+			url: "/group11/buma/wish_list_post.php",
+			data: "wish_id=" + wish_id + "&action=complete" ,
+			success: function(result) {
+				if (result == "Wish completed.") {
+					window.location.replace("/group11/buma/wish_list");
 				}
 			}
 		});

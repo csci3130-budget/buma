@@ -6,11 +6,11 @@ include_once dirname(__FILE__) . '/classes/connection.php';
  * @class reg
  * Set up variable that need to be register into datatbase.
  *
- * @param userid
- * @param username
- * @param password
- * @param email
- * @param regdate
+ * @var userid
+ * @var username
+ * @var password
+ * @var email
+ * @var regdate
  */	
 class register {
 	public $userid;

@@ -14,6 +14,15 @@ $sql = 'SELECT b.budget_id,
 		
 $budgets = $connection->runSqlWithReturn($sql);
 
+$sql = 'SELECT w.name,
+               w.price,
+               w.wish_list_id
+        FROM ' . $connection->database . '.wish_list w 
+        WHERE w.user_id = ' . htmlentities($user_id) . '
+        ORDER BY w.name ASC';
+        
+    $wishes = $connection->runSqlWithReturn($sql);
+
 
 if (count($budgets)) {
 	foreach ($budgets as $k => $budget){
@@ -27,17 +36,28 @@ if (count($budgets)) {
 	
 	$TotalSpentAmount = $connection->runSqlWithReturn($sql);
 	foreach ($TotalSpentAmount as $t){
-	if($t["TotalAmount"] > $TotalAmount){	
-		echo '<div><h4>Total Goal: $'. number_format($TotalAmount, 2, '.', ',') . '</h4>
-			  <h4 class="red-color">Total Spent: $'. number_format($t["TotalAmount"], 2, '.', ',') . '</h4>';
-	} else	echo '<div><h4>Total Goal: $'. number_format($TotalAmount, 2, '.', ',') . '</h4>
+		$TotalSpent = $t["TotalAmount"];
+		if($t["TotalAmount"] > $TotalAmount){
+			echo '<div><h4>Total Limit: $'. number_format($TotalAmount, 2, '.', ',') . '</h4>
+				  <h4 class="red-color">Total Spent: $'. number_format($t["TotalAmount"], 2, '.', ',') . '</h4>';
+		} else	echo '<div><h4>Total Limit: $'. number_format($TotalAmount, 2, '.', ',') . '</h4>
 			  <h4>Total Spent: $'. number_format($t["TotalAmount"], 2, '.', ',') . '</h4>'; 
+	
+	if (count($wishes)){
+		$saved = $TotalAmount - $TotalSpent;
+		foreach ($wishes as $w) {
+			if($w["price"] <= $saved) {
+				echo '<div class="form-horizontal"><a href="/group11/buma/wish_list" style="text-decoration: none;"><button class="btn btn-success btn-block" style="color: yellow; float: center; margin-left: auto; margin-right: auto; text-decoration: none;"><span style="color: yellow;" class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;Complete your wishes!</button></a></div>';
+				break;
+			}
+		}
+	}	
 	echo'<table class="table budgets_home">
 			<thead>
 				<tr>
 					<th><h5><b></b></h5></th>
 					<th><h5><b>Spent</b></h5></th>
-					<th><h5><b>Goal</b></h5></th>
+					<th><h5><b>Limit</b></h5></th>
 					<th id="nowrap"></th>
 				</tr>
 			</thead>

@@ -4,14 +4,6 @@ use \WebGuy;
 class UserStoryLoginCest
 {
 
-				public function _before()
-				{
-				}
-
-				public function _after()
-				{
-				}
-
 				// Check if user can see login page
 				public function welcome($I) {
 								
@@ -88,24 +80,13 @@ class UserStoryLoginCest
 				// Logout if user is logged in
 			 	public function logoutSuccess($I) {
 								$I->wantTo('Logout of BUMA successfully');
-								$I->amOnPage('login');
 
-								// Should default to centi.cs.dal.ca/group11/buma
-								$I->see('Welcome to BUBA');
-
-								// We already have an account created with this username and password
-								// So we expected this test to pass
-								$I->fillField('email', 'test');
-								$I->fillField('password', 'test');
-
-								$I->click('#btn_login_form');
-								$I->amOnPage('home');
-
+								LoginCest::login($I);	
+								
 								// If we don't see Log in, then we are logged in and the test has passed 
-								$I->sendAjaxGetRequest('home');
 								$I->dontSee('Log in');
 								$I->click('body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.collapse.navbar-collapse > ul > li:nth-child(10) > a');
-								$I->sendAjaxGetRequest('/refrest');
+								$I->sendAjaxGetRequest('/refresh');
 								$I->amOnPage('login');
 								}
 			}

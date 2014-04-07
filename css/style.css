@@ -77,7 +77,8 @@ body {
 }
 
 .budget_id,
-.expense_id {
+.expense_id,
+.wish_id {
 	display: none;
 }
 
@@ -237,4 +238,7 @@ div.normal {
 
 .red-color {
 	color: red;
+}
+.green-color {
+	color: green;
 }

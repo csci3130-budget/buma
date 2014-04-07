@@ -1,4 +1,5 @@
 <?php
+
 if (!ini_get('date.timezone')) {
 	date_default_timezone_set('America/Anguilla');
 }
@@ -12,6 +13,7 @@ include_once dirname(__FILE__) . '/config.php';
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, , user-scalable=no">
         <title>BUMA</title>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="/group11/buma/js/jquery-ui-1.10.4.custom.min.js"></script>
  	    <script type="text/javascript" src="/group11/buma/js/event.js"></script>
         <link href="/group11/buma/css/bootstrap.min.css" rel="stylesheet">
         <link href="/group11/buma/css/style.css" rel="stylesheet" type="text/css" media="screen" >
@@ -33,7 +35,6 @@ include_once dirname(__FILE__) . '/config.php';
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
                               </button>';
 
                     ?><a class="navbar-brand" href="/group11/buma/home"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;BUMA</a>
@@ -47,7 +48,6 @@ include_once dirname(__FILE__) . '/config.php';
                                   <li><a href="/group11/buma/add_budget"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Budget</a></li> <!--#Add-->
                                   <li><a href="/group11/buma/add_expense"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Add New Expense</a></li> <!--#Add-->
                                   <li><a href="/group11/buma/wish_list"><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;Wish List</a></li> <!--#Wish-->
-                                  <li><a href="/group11/buma/statistics"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Statistics</a></li> <!--#Stats-->
                                   <li><a href="/group11/buma/logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Logout</a></li> <!--#Logout-->';
                     ?></ul>
                 </div>
