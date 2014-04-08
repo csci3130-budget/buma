@@ -79,7 +79,7 @@ class UserStoryCreateWishCest
 				$I->click('#new_wish > div:nth-child(4) > div > a');
 				
 				//Confirm item was added.
-				$I->see('Item added to wish list!');
+				$I->see('Wish added');
 				
 				//Fill in fields with duplicate item
 				$I->fillField('Item', 'test item');
@@ -93,6 +93,22 @@ class UserStoryCreateWishCest
 		}
 		// TESTS TO COMPLETE
 		// Success message if item added to wishlist
+		public function CheckMessage($I) {
+				LoginCest::login($I);
+				$I->wantTo('check if wish added message appears on page');
+				$I->amOnPage('wish_list');
+				
+				$I->see('Item');
+				$I->see('amount');
+				
+				$I->fillField('Item', 'test');
+    				$I->fillField('itemCost', '50');
+				
+				$I->click('#new_wish > div:nth-child(4) > div > a');
+			        //Should see success message.
+				$I->see('Wish added');
+		}
 		// Show item added in database
 		
-}  
+  
+}		  
